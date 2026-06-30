@@ -1,0 +1,183 @@
+---
+layout: default
+---
+{%- assign father = site.people | where: 'slug', page.parents.father -%}
+{%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{% comment %} We need to validate the date is an actual date, not "about 1675" {% endcomment %}
+{%- if page.born.date and page.death.date -%}
+  {% assign born = page.born.date | date: '%Y' %}
+  {% assign died = page.death.date | date: '%Y' %}
+  {% assign age = died | minus: born %}
+{%- else -%}
+  {% assign age = '' %}
+{%- endif -%}
+
+{% if page.alt-names.size > 0 or page.alt-spelling.size > 0 %}
+<header class="person__header">
+  <h1 class="person__title">{% if page.full-name %}{{ page.full-name }}{% else %}{{ page.name }}{% endif %}</h1>
+  {% if page.alt-names.size > 0 %}<p>Also known as: {% for alt in page.alt-names %}{% unless forloop.first %}, {% endunless %}{{ alt }}{% endfor %}</p>{% endif %}
+  {% if page.alt-spelling.size > 0 %}<p>Alternate spelling(s): {% for spell in page.alt-spelling %}{% unless forloop.first %}, {% endunless %}{{ spell }}{% endfor %}</p>{% endif %}
+</header>
+{% else %}
+  <h1 class="person__title">{% if page.full-name %}{{ page.full-name }}{% else %}{{ page.name }}{% endif %}</h1>
+{% endif %}
+
+<dl class="person__metadata">
+  {% if page.generation %}
+  <dt>Generation</dt>
+  <dd>Hogue family generation number {{ page.generation }}</dd>
+  {% endif %}
+  {% if page.born.date %}
+    <dt>Born{% if page.baptized.date %} / Baptized{% endif %}</dt>
+    <dd>{{ page.born.date | date: "%e %B %Y" }}{% if page.born.location %}, {{ page.born.location }}{% endif %}{% if page.baptized.date %} / {{ page.baptized.date | date: "%e %B %Y" }}{% if page.baptized.location %}, {{ page.baptized.location }}{% endif %}{% endif %}</dd>
+  {% endif %}
+  {% if page.death.date and page.death.date != '?' %}
+    <dt>Died{% if page.buried.date %} / Buried{% endif %}</dt>
+    <dd>{% if age != '' %}{{ age }} years old, {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
+  {% endif %}
+</dl>
+
+<h2>Relationships</h2>
+<dl class="person__rels">
+  {%- if page.parents.father and page.parents.mother -%}
+    <dt><h3>Parents</h3></dt>
+    <dd>{% include snippets/person-link.html string=page.parents.father %} and {% include snippets/person-link.html string=page.parents.mother %}</dd>
+
+    {% comment %}
+      Siblings are either listed as children along with the spouse on the Father’s page,
+      or they are listed with the mother
+    {% endcomment %}
+
+    {%- if mother[0].name -%}
+      {% comment %} Mother has a page {% endcomment %}
+      <!-- Mother has a page -->
+      {% if mother[0].partners.size > 0 %}
+        {% for partner in mother[0].partners %}
+          {% if partner.spouse == father[0].slug %}
+            <dt><h3>Sibling{% if partner.children.size > 1 %}s{% endif %}</h3></dt>
+            {% for sibling in partner.children %}
+              {% if sibling.child != page.slug %}
+                <dd>{% include snippets/person-link.html string=sibling.child %}</dd>
+              {% else %}
+                <dd><s aria-current="page">{{ page.name }}</s></dd>
+              {% endif %}
+            {% endfor %}
+          {% endif %}{% comment %} End spouse == father[0].slug {% endcomment %}
+        {% endfor %}{% comment %} End spouse in mother.partners {% endcomment %}
+      {% endif %}{% comment %} End if mother.partners.size > 0 {% endcomment %}
+
+    {%- else -%}
+
+      {% comment %} Mother does not have a page. Father might list children with the partner {% endcomment %}
+      <!-- Mother does not have a page -->
+      {% comment %} Check if there is more than one, to avoid only childs {% endcomment %}
+      {% if page.partners.spouse.children.size > 1 %}
+        <dt><h3>Sibling{% if page.partners.spouse.children.size > 2 %}s{% endif %}</h3></dt>
+        {% for sibling in page.partners.spouse.children %}
+          {% if sibling.child != page.slug %}
+            <dd>{% include snippets/person-link.html string=sibling.child %}</dd>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {%- endif -%}
+  {%- endif -%}{% comment %} End if page.parents {% endcomment %}
+
+  {%- if page.partners.size > 0 -%}
+    {%- for partner in page.partners -%}
+      {% if forloop.first %}
+        <dt><h3>Partner{% if page.partners.size > 1 %}s{% endif %}</h3></dt>
+      {% endif %}
+      <dd>
+        {%- include snippets/person-link.html string=partner.spouse -%}{%- if partner.date -%}, married on {{ partner.date | date: "%e %B %Y" }}{% endif %}{% if partner.location %}, {{ partner.location }}.{%- endif -%}
+        {%- if partner.divorce -%}Divorced on {{ partner.divorce | date: "%e %B %Y" }}.{%- endif -%}
+  
+        {% comment %}
+          As much as possible, children are listed with their mothers.
+          Children can be listed in one of two ways:
+          1. Their mother does not have a page of their own; therefore, the children are listed with the Father under Partners
+          2. Their mother has a page, therefore, the children are listed there
+
+          The code below checks first if the current page lists children, i.e. if partner.children.size > 0
+          If not, it checks the connected spouse page for children where the partner matches the current page.slug
+        {% endcomment %}
+
+        {% assign spouse = site.people | where: 'slug', partner.spouse %}
+        {% comment %} Check if this partner lists children {% endcomment %}
+        {% if partner.children.size > 0 %}
+          {% comment %} This partner lists children, therefore, loop over them {% endcomment %}
+          {% for child in partner.children %}
+            {% if forloop.first %}
+              <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
+            {% endif %}
+            <li>{% include snippets/person-link.html string=child.child %}</li>
+          {% endfor %}
+          </ol>
+        {% else %}
+          {% comment %} This partner does not list children, therefore, get the Spouse’s page {% endcomment %}
+          {% if spouse[0].name %}
+            {% comment %} Spouse has a page {% endcomment %}
+            {% comment %} Loop over the partners {% endcomment %}
+            {% if spouse[0].partners.size > 0 %}
+              {% for partner in spouse[0].partners %}
+                {% comment %} Only output children that match this page’s identifier {% endcomment %}
+                {% if partner.spouse == page.slug %}
+                  {% comment %} Loop over their partnership’s children {% endcomment %}
+                  {% for child in partner.children %}
+                    {% if forloop.first %}
+                        <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
+                      {% endif %}
+                      <li>{% include snippets/person-link.html string=child.child %}</li>
+                    {% endfor %}{% comment %} End for child in partner.children {% endcomment %}
+                    </ol>
+                {% endif %}
+              {% endfor %}{% comment %} End for partner in spouse[0].partners {% endcomment %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      </dd>
+    {%- endfor -%}{% comment %} End for page.partners {% endcomment %}
+  {% endif %}{% comment %} End if page.partners.size > 0 {% endcomment %}
+</dl>
+
+{{ page.content }}
+
+{%- if page.parents.father != 'Unknown' and page.parents.father and page.parents.mother -%}
+  <h2>Lineage</h2>
+  <ol class="person__lineage">
+    {% comment %} This currently loops 18 generations deep {% endcomment %}
+    {% for counter in (0..17) %}
+      {% if forloop.first %}
+        {% comment %} The first time through, the child is the person who is this page — J. as child, Marcel as Father {% endcomment %}
+        {% assign child = page %}
+        {% assign father = site.people | where: 'slug', page.parents.father %}
+        {% assign mother = site.people | where: 'slug', page.parents.mother %}
+      {% else %}
+        {% comment %} The second time through, the child is the previous father and now we look for that father's father — Marcel becomes Child, Father is now Marcel's Father {% endcomment %}
+        {% assign child = father[0] %}
+        {% assign father = site.people | where: 'slug', child.parents.father %}
+        {% assign mother = site.people | where: 'slug', child.parents.mother %}
+      {% endif %}
+      
+      {% if father[0].name %}
+      <li>{{ child.name }}, child of 
+        {% if father[0].name %}
+          <a href="/person/{{ father[0].slug }}">{{ father[0].name }}</a> {% if father[0].born.date %}({{ father[0].born.date | date: "%Y" }}{% if father[0].death.date %}–{{ father[0].death.date | date: "%Y" }}{% endif %}{% endif %})
+        {% else %}
+          {{ child.parents.father }}
+        {% endif %}
+        {% if mother[0].name %}
+          and <a href="/person/{{ mother[0].slug }}">{{ mother[0].name }}</a> {% if mother[0].born.date %}({{ mother[0].born.date | date: "%Y" }}{% if mother[0].death.date %}–{{ mother[0].death.date | date: "%Y" }}{% endif %}{% endif %})
+        {% else %}
+          and {{ child.parents.mother }}
+        {% endif %}
+      </li>
+      {% else %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+{% endif %}
+
+{% if page.revised-date %}
+  <p><i><b>Last revised/updated</b> {{ page.revised-date | date: "%e %B %Y"}}</i></p>
+{% endif %}

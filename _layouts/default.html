@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="no-js{% if page.layout %} l-{{ page.layout }}{% endif %}">
+    <div id="page-top" class="l">
+      <!--<a href="#content" class="u__sr-only u__sr-only--focusable skip-link">Skip to Content</a>-->
+
+      {% include navigation.html %}
+
+      <main class="l__main">
+        <article id="content" tabindex="-1">
+
+        {{ content }}
+
+        </article>
+      </main>
+
+      {% include footer.html %}
+
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>
