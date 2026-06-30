@@ -1,13 +1,20 @@
 Hogue Family Tree
 =================
 
-And a Genealogy Jekyll Theme with custom post type of **People**.
+A Genealogy Jekyll Theme with custom post type of **People**.
+
 
 ## Credits
 
-Marcel G. Hogue (generation 11) conducted most of the original research, with help from others as noted. He alone was able to trace the Hogue lineage back 12 generations to 1625. The generational numbers assume that future researchers will not be able to go further than 1625. Generation 1 starts with [Jean Hogue (1625–?)]({% link _person/1625-jean-hogue.md %})
+Marcel G. Hogue (generation 11) conducted the bulk of the original research, with help from others as noted. He alone was able to trace the Hogue lineage back 12 generations to 1625. The generational numbers assume that future researchers will not be able to go further than 1625. Generation 1 starts with [Jean Hogue (1625–?)]({% link _person/1625-jean-hogue.md %})
 
 Jason C. Hogue (generation 12) programmed this Jekyll theme and created the Liquid FrontMatter logic to store the work of his father and make it accessible to other descendants. This theme is open source and distributed with a Creative Commons license. Others may copy this and make it their own.
+
+
+## Getting localhost working
+
+For the first time install, from the folder root, run `bundle install`. If no conflicts bubble up, from project root, run `bundle exec jekyll serve` and visit [127.0.0.1:6040/](http://127.0.0.1:6040/) to view the site.
+
 
 ## Notes and Nuances
 
