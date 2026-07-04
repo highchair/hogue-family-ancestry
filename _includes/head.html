@@ -1,4 +1,16 @@
-<title>{% if page.full-name %}{{ page.full-name }}{% else %}{{ page.name }}{% endif %} ({{ page.born.date | date: "%Y" }} — {{ page.death.date | date: "%Y" }})</title>
+{%- assign head-title = '' -%}
+{%- if page.layout == 'person' -%}
+  {% if page.full-name %}
+    {% assign head-title = page.full-name | append: ' | ' | append: site.title %}
+  {% else %}
+    {% assign head-title = page.name | append: ' | ' | append: site.title %}
+  {% endif %}
+{%- else if page.layout == 'post' -%}
+  {% assign head-title = page.title %}
+{%- else -%}
+  {% assign head-title = site.title | append: ' | ' | append: site.title %}
+{%- endif -%}
+<title>{{ head-title }}</title>
 <style>
   body {
     font: normal 100%/1.5 sans-serif;
