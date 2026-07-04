@@ -3,14 +3,6 @@ layout: default
 ---
 {%- assign father = site.people | where: 'slug', page.parents.father -%}
 {%- assign mother = site.people | where: 'slug', page.parents.mother -%}
-{% comment %} We need to validate the date is an actual date, not "about 1675" {% endcomment %}
-{%- if page.born.date and page.death.date -%}
-  {% assign born = page.born.date | date: '%Y' %}
-  {% assign died = page.death.date | date: '%Y' %}
-  {% assign age = died | minus: born %}
-{%- else -%}
-  {% assign age = '' %}
-{%- endif -%}
 
 {% if page.alt-names.size > 0 or page.alt-spelling.size > 0 %}
 <header class="person__header">
@@ -33,7 +25,7 @@ layout: default
   {% endif %}
   {% if page.death.date and page.death.date != '?' %}
     <dt>Died{% if page.buried.date %} / Buried{% endif %}</dt>
-    <dd>{% if age != '' %}{{ age }} years old, {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
+    <dd>{% if page.age-at-death != '' %}{{ age }}, {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
   {% endif %}
 </dl>
 
@@ -109,7 +101,7 @@ layout: default
             {% if forloop.first %}
               <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
             {% endif %}
-            <li>{% include snippets/person-link.html string=child.child %}</li>
+            <li>{% include snippets/person-link.html string=child.child show_age='true' %}</li>
           {% endfor %}
           </ol>
         {% else %}
@@ -126,7 +118,7 @@ layout: default
                     {% if forloop.first %}
                         <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
                       {% endif %}
-                      <li>{% include snippets/person-link.html string=child.child %}</li>
+                      <li>{% include snippets/person-link.html string=child.child show_age='true' %}</li>
                     {% endfor %}{% comment %} End for child in partner.children {% endcomment %}
                     </ol>
                 {% endif %}
