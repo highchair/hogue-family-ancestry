@@ -20,6 +20,7 @@ death:
 buried:
   date:
   location:
+age-at-death:
 
 parents:
   father:
