@@ -5,7 +5,7 @@ name: 'Jean Baptiste Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
-generation: 3
+generation: 3.4
 revised-date: 2013-06-27
 
 parents:
@@ -24,6 +24,7 @@ death:
 buried:
   date: 1750-02-23
   location: 'Riviere-des-Prairies, Quebec, Canada'
+age-at-death: '70y 1m'
 
 partners:
   - spouse: 'Barbe Coiteux (Coetteux) (about 1686–1767), daughter of Jacques Coetteux and Barbe Dumets (Demers, or Dumay, or Dumais)'
@@ -34,7 +35,7 @@ partners:
       - child: 'Marie Madeleine Hogue (1707–1777) bm'
       - child: 'Jean Baptiste Hogue (1709–?) bm'
       - child: 'Joseph Hogue (1711–1733) bd'
-      - child: 'Francois Hogue (1713–1763) bm'
+      - child: 'Francois Hogue (1713–1763) bm' #There is a reference to this person in Acknowledgments
       - child: 'Jean Hogue (1715–1716) bm'
       - child: 'Marie Genevieve Hogue (1717–1747) bm'
       - child: 'Louis Hogue (March 1720–July 1720) bd'
@@ -49,4 +50,4 @@ partners:
 
 + **Barbe Dumets** — “Dumets” spelling is from Ilene Trainor email dated 08 March 2011. Other variations we show are from the “Grande Bibliotheque Collection nationale” database in Montreal.
 + **Children** — All of the above children were found in the “PRDH” database: “b” indicates “baptismal” file, “m” indicates “marriage” file, and “d” indicates “death/burial” file.  Madeleine is possibly a twin with Louis, but a baptismal file has so far not been found. And the date of her death is unclear due to conflicting information on the source documents.
-+ Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See Generation 11 Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._
++ Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See (Generation 11.32) Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._
