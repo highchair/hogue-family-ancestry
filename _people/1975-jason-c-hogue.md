@@ -5,7 +5,7 @@ name: 'Jason C. Hogue'
 full-name: 'Jason Christopher Hogue'
 alt-names: []
 alt-spelling: []
-generation: 12
+generation: 12.1
 revised-date: 
 
 parents:
@@ -23,6 +23,7 @@ death:
 buried:
   date:
   location:
+age-at-death:
 
 partners:
   - spouse: 'Kathleen A. Griffin'

@@ -24,6 +24,7 @@ death:
 buried:
   date: 1974-11-14
   location: 'St. Jean Baptiste Cemetary, Bellingham, MA'
+age-at-death: '93y 10m'
 
 partners:
   - spouse: 1880-juvenile-champagne

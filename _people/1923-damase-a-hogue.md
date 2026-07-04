@@ -23,6 +23,7 @@ death:
 buried:
   date: 1990-11-27
   location:
+age-at-death: '67y 6m'
 
 partners:
   - spouse: 1927-lucille-m-marcotte

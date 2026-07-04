@@ -23,6 +23,7 @@ death:
 buried:
   date:
   location:
+age-at-death:
 
 partners:
   - spouse: 1947-marcel-g-hogue

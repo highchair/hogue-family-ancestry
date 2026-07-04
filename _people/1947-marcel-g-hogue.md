@@ -5,7 +5,7 @@ name: 'Marcel G. Hogue'
 full-name: 'Marcel Gerard Hogue'
 alt-names: []
 alt-spelling: []
-generation: 11
+generation: 11.32
 revised-date:
 
 parents:
@@ -23,6 +23,7 @@ death:
 buried:
   date:
   location:
+age-at-death:
 
 partners:
   - spouse: 1948-denise-i-laferriere

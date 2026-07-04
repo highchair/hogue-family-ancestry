@@ -24,6 +24,7 @@ death:
 buried:
   date:
   location:
+age-at-death: '83y 5m'
 
 partners:
   - spouse: 1923-damase-a-hogue
