@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<header class="post__header">
+  <h1 class="post__title">{{ page.title }}</h1>
+  <p><b>Author:</b> {% include snippets/person-link.html string=page.author %} | <b>Written:</b> {{ page.date | date: "%e %B %Y" }}</p>
+</header>
+
+{{ content }}
+
+<footer class="post__meta">
+  {%- comment -%} Store the index of this property out of ALL properties {%- endcomment -%}
+  {%- assign posts = site.posts -%}
+  {%- assign item_index = 0 -%}
+  {%- for item in posts -%}
+    {% if item.title == page.title %}
+      {% assign item_index = forloop.index %}
+      {% break %}
+    {% endif %}
+  {%- endfor -%}
+  {%- if item_index > 0 -%}
+    {% assign prev_index = item_index | minus: 1 %}
+    {% assign next_index = item_index | plus: 1 %}
+    {% comment %} Loop again, this time, find the items with the prev and next indices {% endcomment %}
+    {% comment %} Can this be done with assign prev = property[prev_index] ?? {% endcomment %}
+    {% for item in posts %}
+      {% if forloop.index == prev_index %}
+        {%- assign prev = item %}
+      {% endif %}
+      {% if forloop.index == next_index %}
+        {% assign next = item %}
+      {% endif %}
+    {% endfor %}
+  {%- endif -%}
+  <nav class="post__nav" aria-label="Posts">
+    {%- if prev -%}<a class="post__nav__prev" href="{{ prev.url }}">
+      <div class="post__nav__label u__eyebrow"><span aria-hidden="true">&#171;</span><span class="post__nav__text">Previous</span></div>
+      <div class="post__nav__title">{{ prev.title }}</div>
+    </a>{%- endif -%}
+    {%- if next -%}<a class="post__nav__next" href="{{ next.url }}">
+      <div class="post__nav__label u__eyebrow"><span class="post__nav__text">Next</span><span aria-hidden="true">&#187;</span></div>
+      <div class="post__nav__title">{{ next.title }}</div>
+    </a>{%- endif -%}
+  </nav>
+</footer>
