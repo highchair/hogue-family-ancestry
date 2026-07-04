@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Hogue Family Geneology
+title: 'Hogue Family Geneology'
 description: 
 github_username: jhogue
 github_repo:
