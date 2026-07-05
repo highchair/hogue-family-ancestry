@@ -42,6 +42,9 @@ collections:
   people:
     output: true
     permalink: /person/:slug/
+  posts:
+    output: true
+    permalink: /posts/:slug/
 
 defaults:
   - scope:
