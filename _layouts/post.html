@@ -4,14 +4,14 @@ layout: default
 
 <header class="post__header">
   <h1 class="post__title">{{ page.title }}</h1>
-  <p><b>Author:</b> {% include snippets/person-link.html string=page.author %} | <b>Written:</b> {{ page.date | date: "%e %B %Y" }}</p>
+  <p><b>Author:</b> {% include snippets/person-link.html string=page.author %} | <b>Written by:</b> {{ page.date | date: "%e %B %Y" }}</p>
 </header>
 
 {{ content }}
 
 <footer class="post__meta">
   {%- comment -%} Store the index of this property out of ALL properties {%- endcomment -%}
-  {%- assign posts = site.posts -%}
+  {%- assign posts = site.posts | reverse -%}
   {%- assign item_index = 0 -%}
   {%- for item in posts -%}
     {% if item.title == page.title %}
