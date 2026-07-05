@@ -3,15 +3,45 @@ layout: default
 ---
 {%- assign father = site.people | where: 'slug', page.parents.father -%}
 {%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{%- assign person_name = '' -%}
+{%- assign person_born = '' -%}
+{%- assign person_born_location = '' -%}
+{%- assign person_died = '' -%}
+{%- assign person_died_location = '' -%}
+{%- if page.full-name -%}
+  {% assign person_name = page.full-name %}
+{%- else -%}
+  {% assign person_name = page.name %}
+{% endif %}
+{%- if page.born.date or page.baptized.date -%}
+  {% assign person_born = page.born.date %}
+{%- else -%}
+  {% assign person_born = page.baptized.date %}
+{% endif %}
+{%- if page.born.location or page.baptized.location -%}
+  {% assign person_born_location = page.born.location %}
+{%- else -%}
+  {% assign person_born_location = page.baptized.location %}
+{% endif %}
+{%- if page.death.date or page.buried.date -%}
+  {% assign person_died = page.death.date %}
+{%- else -%}
+  {% assign person_died = page.buried.date %}
+{% endif %}
+{%- if page.death.location or page.buried.location -%}
+  {% assign person_died_location = page.death.location %}
+{%- else -%}
+  {% assign person_died_location = page.buried.location %}
+{% endif %}
 
 {% if page.alt-names.size > 0 or page.alt-spelling.size > 0 %}
 <header class="person__header">
-  <h1 class="person__title">{% if page.full-name %}{{ page.full-name }}{% else %}{{ page.name }}{% endif %}</h1>
+  <h1 class="person__title" data-name="{{ person_name }}">{{ person_name }}</h1>
   {% if page.alt-names.size > 0 %}<p>Also known as: {% for alt in page.alt-names %}{% unless forloop.first %}, {% endunless %}{{ alt }}{% endfor %}</p>{% endif %}
   {% if page.alt-spelling.size > 0 %}<p>Alternate spelling(s): {% for spell in page.alt-spelling %}{% unless forloop.first %}, {% endunless %}{{ spell }}{% endfor %}</p>{% endif %}
 </header>
 {% else %}
-  <h1 class="person__title">{% if page.full-name %}{{ page.full-name }}{% else %}{{ page.name }}{% endif %}</h1>
+  <h1 class="person__title" data-name="{{ person_name }}">{{ person_name }}</h1>
 {% endif %}
 
 <dl class="person__metadata">
@@ -19,13 +49,13 @@ layout: default
   <dt>Generation</dt>
   <dd>Hogue family generation number {{ page.generation }}</dd>
   {% endif %}
-  {% if page.born.date %}
+  {% if page.born.date or page.baptized.date %}
     <dt>Born{% if page.baptized.date %} / Baptized{% endif %}</dt>
-    <dd>{{ page.born.date | date: "%e %B %Y" }}{% if page.born.location %}, {{ page.born.location }}{% endif %}{% if page.baptized.date %} / {{ page.baptized.date | date: "%e %B %Y" }}{% if page.baptized.location %}, {{ page.baptized.location }}{% endif %}{% endif %}</dd>
+    <dd data-birth-date="{{ person_born }}" data-birth-place="{{ person_born_location }}">{{ page.born.date | date: "%e %B %Y" }}{% if page.born.location %}, {{ page.born.location }}{% endif %}{% if page.baptized.date %} / {{ page.baptized.date | date: "%e %B %Y" }}{% if page.baptized.location %}, {{ page.baptized.location }}{% endif %}{% endif %}</dd>
   {% endif %}
-  {% if page.death.date and page.death.date != '?' %}
+  {% if page.death.date or page.death.date != '?' %}
     <dt>Died{% if page.buried.date %} / Buried{% endif %}</dt>
-    <dd>{% if page.age-at-death != '' %}{{ age }}, {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
+    <dd data-death-date="{{ person_died }}" data-death-place="{{ person_died_location }}">{% if page.age-at-death %}{{ page.age-at-death }} — {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
   {% endif %}
 </dl>
 
@@ -33,7 +63,8 @@ layout: default
 <dl class="person__rels">
   {%- if page.parents.father and page.parents.mother -%}
     <dt><h3>Parents</h3></dt>
-    <dd>{% include snippets/person-link.html string=page.parents.father %} and {% include snippets/person-link.html string=page.parents.mother %}</dd>
+    <dd data-parent="{% if father[0].name %}{{ father[0].name }}{% else %}{{ page.parents.father }}{% endif %}" {% if father[0].name %}data-parent-id="{{ father[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.father %}</dd>
+    <dd data-parent="{% if mother[0].name %}{{ mother[0].name }}{% else %}{{ page.parents.mother }}{% endif %}" {% if mother[0].name %}data-parent-id="{{ mother[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.mother %}</dd>
 
     {% comment %}
       Siblings are either listed as children along with the spouse on the Father’s page,
@@ -76,13 +107,21 @@ layout: default
 
   {%- if page.partners.size > 0 -%}
     {%- for partner in page.partners -%}
-      {% if forloop.first %}
+      {%- if forloop.first -%}
         <dt><h3>Partner{% if page.partners.size > 1 %}s{% endif %}</h3></dt>
-      {% endif %}
-      <dd>
-        {%- include snippets/person-link.html string=partner.spouse -%}{%- if partner.date -%}, married on {{ partner.date | date: "%e %B %Y" }}{% endif %}{% if partner.location %}, {{ partner.location }}.{%- endif -%}
+      {%- endif -%}
+      {%- assign found_partner = site.people | where: 'slug', partner.spouse -%}
+      <dd 
+        {% if found_partner[0].name %}data-spouse-name="{{ found_partner[0].name }}" data-spouse-id="{{ found_partner[0].slug }}" {% else %}data-spouse-name="{{ partner.spouse }}" {% endif %}
+        {% if found_partner[0] %}
+          {% if found_partner[0].born.date %}data-spouse-birth="{{ found_partner[0].born.date | date: "%Y" }}" {% endif %}
+          {% if found_partner[0].death.date %}data-spouse-death="{{ found_partner[0].death.date | date: "%Y" }}" {% endif %}
+        {% endif %}
+        {% if partner.date %}data-marriage-date="{{ partner.spouse.date }}"{% endif %}
+      >
+        {%- include snippets/person-link.html string=partner.spouse -%}{%- if partner.date -%}, married on {{ partner.date | date: "%e %B %Y" }}{%- endif -%}{%- if partner.location -%}, {{ partner.location }}.{%- endif -%}
         {%- if partner.divorce -%}Divorced on {{ partner.divorce | date: "%e %B %Y" }}.{%- endif -%}
-  
+
         {% comment %}
           As much as possible, children are listed with their mothers.
           Children can be listed in one of two ways:
@@ -101,6 +140,13 @@ layout: default
             {% if forloop.first %}
               <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
             {% endif %}
+            {% comment %}
+              Schema for children:
+              <li data-child-name="Jean Baptiste Hogue" 
+                data-child-birth="1680" 
+                data-child-death="1750"
+                data-child-id="1680-jean-b-hogue">
+            {% endcomment %}
             <li>{% include snippets/person-link.html string=child.child show_age='true' %}</li>
           {% endfor %}
           </ol>
@@ -149,7 +195,7 @@ layout: default
         {% assign father = site.people | where: 'slug', child.parents.father %}
         {% assign mother = site.people | where: 'slug', child.parents.mother %}
       {% endif %}
-      
+
       {% if father[0].name %}
       <li>{{ child.name }}, child of 
         {% if father[0].name %}
