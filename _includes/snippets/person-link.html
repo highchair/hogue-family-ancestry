@@ -1,6 +1,6 @@
 {%- assign found = site.people | where: 'slug', include.string -%}
 {%- if found[0].name -%}
-  <a href="/person/{{ found[0].slug }}">{{ found[0].name }}</a> {% if found[0].born.date %}({{ found[0].born.date | date: "%Y" }}{% if found[0].death.date %}–{{ found[0].death.date | date: "%Y" }}{% if include.show_age %}true{% if found[0].age-at-death %}, {{ found[0].age-at-death }}{% endif %}{% endif %}{% endif %}{% endif %})
+  <a href="/person/{{ found[0].slug }}">{{ found[0].name }}</a> {% if found[0].born.date %}({{ found[0].born.date | date: "%Y" }}{% if found[0].death.date %}–{{ found[0].death.date | date: "%Y" }}{% if include.show_age %}{% if found[0].age-at-death %}, {{ found[0].age-at-death }}{% endif %}{% endif %}{% endif %}{% endif %})
 {%- else -%}
   {{ include.string }}
 {%- endif -%}

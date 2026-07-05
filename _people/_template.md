@@ -1,30 +1,40 @@
 ---
 layout: person
-slug: 
+slug: # Unique identifier
 name: ''
 full-name:
-alt-names: []
-alt-spelling: []
+alt-names: [] # Maiden names
+alt-spelling: [] # Variations in spelling
 generation:
-revised-date:
+revised-date: # Last time this information was updated
 
-born: 
+# If only the baptism date exists, we use that for an approximate birth date
+# though, of course, there is no guarantee baptism quickly followed birth. Use 'about XXXX'
+
+born:
   date:
   location:
 baptized:
   date:
   location:
+
+# If only the buried date exists, we use that for an approximate death date
+# though, of course, there is no guarantee burial quickly followed death. Use 'about XXXX'
+
 death:
   date:
   location:
 buried:
   date:
   location:
-age-at-death:
+age-at-death: # Use https://www.timeanddate.com/date/durationresult.html to calculate duration
 
 parents:
   father:
   mother:
+
+# Store the children with the Mother when we have enough information to create a page
+# Store the children with the Father if there will not be a page for the mother
 
 #partners:
 #  - spouse:
@@ -34,7 +44,4 @@ parents:
 #      - child:
 
 ---
-
-## Notes
-
 
