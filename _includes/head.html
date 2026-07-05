@@ -10,11 +10,13 @@
 {%- else -%}
   {% assign head-title = site.title | append: ' | ' | append: site.title %}
 {%- endif -%}
+<meta charset="utf-8">
 <title>{{ head-title }}</title>
 <style>
   body {
     font: normal 100%/1.5 sans-serif;
-    margin: 2rem;
+    margin: 4vw;
+    max-width: 50rem;
   }
 
   /*dl*/ .person__metadata {
