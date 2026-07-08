@@ -1,8 +1,27 @@
 ---
 layout: default
 ---
+{% comment %}
+
+  Assigned variables can not easily be DRY in Jekyll.
+  Includes can be passed variables but not through the {{ content }} tag
+  So, we repeat ourselves. 
+
+  These definitions are repeated twice: Once here, once in the schema include
+
+{% endcomment %}
 {%- assign father = site.people | where: 'slug', page.parents.father -%}
+{%- if father[0] -%}
+  {% assign father_name = father[0].name %}
+{%- else -%}
+  {% assign father_name = page.parents.father %}
+{%- endif -%}
 {%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{%- if mother[0] -%}
+  {% assign mother_name = mother[0].name %}
+{%- else -%}
+  {% assign mother_name = page.parents.mother %}
+{%- endif -%}
 {%- assign person_name = '' -%}
 {%- assign person_born = '' -%}
 {%- assign person_born_location = '' -%}
@@ -32,7 +51,7 @@ layout: default
   {% assign person_died_location = page.death.location %}
 {%- else -%}
   {% assign person_died_location = page.buried.location %}
-{% endif %}
+{%- endif -%}
 
 {% if page.alt-names.size > 0 or page.alt-spelling.size > 0 %}
 <header class="person__header">
@@ -63,8 +82,8 @@ layout: default
 <dl class="person__rels">
   {%- if page.parents.father and page.parents.mother -%}
     <dt><h3>Parents</h3></dt>
-    <dd data-parent="{% if father[0].name %}{{ father[0].name }}{% else %}{{ page.parents.father }}{% endif %}" {% if father[0].name %}data-parent-id="{{ father[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.father %}</dd>
-    <dd data-parent="{% if mother[0].name %}{{ mother[0].name }}{% else %}{{ page.parents.mother }}{% endif %}" {% if mother[0].name %}data-parent-id="{{ mother[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.mother %}</dd>
+    <dd data-parent="{{ father_name }}" {% if father[0].name %}data-parent-id="{{ father[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.father %}</dd>
+    <dd data-parent="{{ mother_name }}" {% if mother[0].name %}data-parent-id="{{ mother[0].slug }}"{% endif %}>{% include snippets/person-link.html string=page.parents.mother %}</dd>
 
     {% comment %}
       Siblings are either listed as children along with the spouse on the Father’s page,

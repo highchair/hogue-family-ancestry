@@ -1,0 +1,95 @@
+{%- assign father = site.people | where: 'slug', page.parents.father -%}
+{%- if father[0] -%}
+  {% assign father_name = father[0].name %}
+{%- else -%}
+  {% assign father_name = page.parents.father %}
+{%- endif -%}
+{%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{%- if mother[0] -%}
+  {% assign mother_name = mother[0].name %}
+{%- else -%}
+  {% assign mother_name = page.parents.mother %}
+{%- endif -%}
+{%- assign person_name = '' -%}
+{%- assign person_born = '' -%}
+{%- assign person_born_location = '' -%}
+{%- assign person_died = '' -%}
+{%- assign person_died_location = '' -%}
+{%- if page.full-name -%}
+  {% assign person_name = page.full-name %}
+{%- else -%}
+  {% assign person_name = page.name %}
+{% endif %}
+{%- if page.born.date or page.baptized.date -%}
+  {% assign person_born = page.born.date %}
+{%- else -%}
+  {% assign person_born = page.baptized.date %}
+{% endif %}
+{%- if page.born.location or page.baptized.location -%}
+  {% assign person_born_location = page.born.location %}
+{%- else -%}
+  {% assign person_born_location = page.baptized.location %}
+{% endif %}
+{%- if page.death.date or page.buried.date -%}
+  {% assign person_died = page.death.date %}
+{%- else -%}
+  {% assign person_died = page.buried.date %}
+{% endif %}
+{%- if page.death.location or page.buried.location -%}
+  {% assign person_died_location = page.death.location %}
+{%- else -%}
+  {% assign person_died_location = page.buried.location %}
+{%- endif -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ person_name }}",
+    "birthDate": "{{ person_born }}",
+    {% if person_born_location %}"birthPlace": {
+      "@type": "Place",
+      "name": "{{ person_born_location }}"
+    },{% endif %}
+    "deathDate": "{{ person_died }}",
+    {% if person_died_location %}"deathPlace": {
+      "@type": "Place",
+      "name": "{{ person_died_location }}"
+    },{% endif %}
+    {% if father_name or mother_name %}"parent": [
+      {% if father[0] %}{
+        "@type": "Person",
+        "name": "{{ father_name }}"
+      }{% endif %}{% if mother[0] %},
+      {
+        "@type": "Person",
+        "name": "{{ mother_name }}"
+      }{% endif %}
+    ],{% endif %}
+    //"spouse": [
+    //  {
+    //    "@type": "Person",
+    //    "name": "Pierre Hogue dit St. Malo",
+    //    "birthDate": "1648",
+    //    "deathDate": "1725"
+    //  },
+    //  {
+    //    "@type": "Person",
+    //    "name": "Jacques Amelot Sanpeur"
+    //  }
+    //],
+    //"children": [
+    //  {
+    //    "@type": "Person",
+    //    "name": "Jean Baptiste Hogue",
+    //    "birthDate": "1680",
+    //    "deathDate": "1750"
+    //  },
+    //  {
+    //    "@type": "Person",
+    //    "name": "Marie Therese Hogue",
+    //    "birthDate": "1682",
+    //    "deathDate": "1699"
+    //  }
+    //]
+  }
+</script>
