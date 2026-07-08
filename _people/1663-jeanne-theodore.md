@@ -5,6 +5,7 @@ name: 'Jeanne Theodore'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation:
 generation:
 revised-date: 2013-05-11
 
@@ -45,6 +46,15 @@ partners:
       - child: 1694-francois-amelot
 
 ---
+
+# About
+
+The Hogue family would not have survived for long in New France without Jeanne Theodore. Not only does she play a strong role in the [finances of the family]({% link _posts/2017-12-25-story-of-pierre.md %}), but she bears two sons that will help produce 9 more sons. In total, Jeanne Theodore has 9 children of her own who go on to have a total of 54 children, most of whom have children of their own, though we do not know for sure who or how many.
+
+She marries at age 13 and has her first child (Marie Anne Therese, for whom not much is known) 2 years later at age 15. Pierre, born 1648, is 28 at the time of marriage.
+
+After bearing seven children with Pierre, Jeanne has one son with another man — Jacques Amelot Sanpeur — in 1694. This creates a far distant half-sibling relationship with the Sanpeur family. As noted below, she and Pierre appear to reconcile (or Pierre never knew of this relationship) and Jeanne will have two more girls with Pierre in 1703 and 1705.
+
 
 ## Notes
 

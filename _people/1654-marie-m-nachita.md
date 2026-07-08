@@ -5,6 +5,7 @@ name: 'Marie M. Nachita'
 full-name: 'Marie Madeline Nachita'
 alt-names: [ 'Marie Madeleine Catherine Nachita' ]
 alt-spelling: []
+major_generation:
 generation:
 revised-date: 2013-05-11
 
@@ -35,6 +36,13 @@ partners:
       - child: 1675-pierre-hogue
 
 ---
+
+## About
+
+Marie Madeline only lived to be 22 years old but bore two sons when she was 19. As an indigenous person, she was baptized at age 18, married a few months later, and had her first child a year later. Unfortunately, her first born only lived seven years and her second to a similar age of 22.
+
+Around this time, newcomers from France were few and those that became Christian [largely did so of their free will](https://en.wikipedia.org/wiki/Indigenous_peoples_in_Canada#Christianization). Later, as new France became more populous, assimilation with European cultures was not so simple.
+
 
 ## Notes
 
