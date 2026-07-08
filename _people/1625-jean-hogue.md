@@ -5,6 +5,7 @@ name: 'Jean Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation: 1
 generation: 1.0
 revised-date: 2013-03-27
 

@@ -1,10 +1,11 @@
 ---
 layout: person
 slug: 1694-francois-amelot
-name: 'Francois Amelot'
+name: 'Francois Amelot (Sanpeur)'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation: 3
 generation: 3.10
 revised-date: 2013-06-27
 

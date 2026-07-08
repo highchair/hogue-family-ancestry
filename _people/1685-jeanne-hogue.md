@@ -5,6 +5,7 @@ name: 'Jeanne Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation: 3
 generation: 3.6
 revised-date: 2013-06-27
 

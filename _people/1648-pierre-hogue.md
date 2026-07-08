@@ -5,6 +5,7 @@ name: 'Pierre Hogue dit St. Malo'
 full-name:
 alt-names: [ 'Pierre Hogue' ]
 alt-spelling: []
+major_generation: 2
 generation: 2.1
 revised-date: 2013-05-11
 

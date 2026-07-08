@@ -5,6 +5,7 @@ name: 'Marie Therese Hogue'
 full-name:
 alt-names: [ 'Marie Anne' ]
 alt-spelling: []
+major_generation: 3
 generation: 3.5
 revised-date: 2013-06-27
 

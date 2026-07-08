@@ -5,6 +5,7 @@ name: 'Marguerite Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation: 3
 generation: 3.9
 revised-date: 2013-06-27
 

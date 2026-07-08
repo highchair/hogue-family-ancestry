@@ -5,7 +5,8 @@ name: ''
 full-name:
 alt-names: [] # Maiden names
 alt-spelling: [] # Variations in spelling
-generation:
+major_generation: # Single digit, i.e. 3
+generation: # Decimal, i.e. 3.1
 revised-date: # Last time this information was updated
 
 # If only the baptism date exists, we use that for an approximate birth date

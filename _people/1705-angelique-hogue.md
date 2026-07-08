@@ -5,6 +5,7 @@ name: 'Angelique Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
+major_generation: 3
 generation: 3.12
 revised-date: 2013-06-27
 
@@ -22,7 +23,7 @@ death:
   date: 'about 1755'
   location:
 buried:
-  date: 1755-050-09
+  date: 1755-05-09
   location: 'St. Antoine-de-Chambly, Quebec, Canada'
 age-at-death: 'about 50y'
 
