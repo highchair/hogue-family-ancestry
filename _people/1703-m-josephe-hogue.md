@@ -1,8 +1,8 @@
 ---
 layout: person
-slug: 1703-marie-j-hogue
-name: 'Marie Josephe Hogue'
-full-name:
+slug: 1703-m-josephe-hogue
+name: 'M. Josephe Hogue'
+full-name: 'Marie Josephe Hogue'
 alt-names: []
 alt-spelling: [ 'Marie Josephte Hogue' ]
 major_generation: 3
