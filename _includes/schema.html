@@ -64,7 +64,7 @@
         "@type": "Person",
         "name": "{{ mother_name }}"
       }{% endif %}
-    ],{% endif %}
+    ]{% endif %}{% comment %} BE CAREFUL with commas here, JSON is unforgiving! {% endcomment %}
     //"spouse": [
     //  {
     //    "@type": "Person",

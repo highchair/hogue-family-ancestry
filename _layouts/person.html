@@ -138,8 +138,9 @@ layout: default
         {% endif %}
         {% if partner.date %}data-marriage-date="{{ partner.spouse.date }}"{% endif %}
       >
-        {%- include snippets/person-link.html string=partner.spouse -%}{%- if partner.date -%}, married on {{ partner.date | date: "%e %B %Y" }}{%- endif -%}{%- if partner.location -%}, {{ partner.location }}.{%- endif -%}
-        {%- if partner.divorce -%}Divorced on {{ partner.divorce | date: "%e %B %Y" }}.{%- endif -%}
+        <h4>{%- include snippets/person-link.html string=partner.spouse -%}{%- if partner.date -%}</h4>
+        <p>Married on {{ partner.date | date: "%e %B %Y" }}{%- endif -%}{%- if partner.location -%}, {{ partner.location }}.{%- endif -%}
+        {%- if partner.divorce -%}Divorced on {{ partner.divorce | date: "%e %B %Y" }}.{%- endif -%}</p>
 
         {% comment %}
           As much as possible, children are listed with their mothers.
@@ -157,7 +158,7 @@ layout: default
           {% comment %} This partner lists children, therefore, loop over them {% endcomment %}
           {% for child in partner.children %}
             {% if forloop.first %}
-              <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
+              <h5>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h5><ol>
             {% endif %}
             {% comment %}
               Schema for children:
@@ -181,7 +182,7 @@ layout: default
                   {% comment %} Loop over their partnership’s children {% endcomment %}
                   {% for child in partner.children %}
                     {% if forloop.first %}
-                        <h4>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h4><ol>
+                        <h5>Children with {% if spouse[0].name %}{{ spouse[0].name }}{% else %}{{ partner.spouse }}{% endif %}</h5><ol>
                       {% endif %}
                       <li>{% include snippets/person-link.html string=child.child show_age='true' %}</li>
                     {% endfor %}{% comment %} End for child in partner.children {% endcomment %}
