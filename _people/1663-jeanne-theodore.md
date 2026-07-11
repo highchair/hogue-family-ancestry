@@ -34,12 +34,12 @@ partners:
     children:
       - child: 'Marie Anne Therese Hogue (1678–?)'
       - child: 1680-jean-b-hogue
-      - child: 1682-marie-t-hogue
-      - child: 1685-jeanne-hogue
+      - child: 1682-m-therese-hogue
+      - child: 1684-jeanne-hogue
       - child: 1685-francois-hogue
       - child: 1689-genevieve-hogue
       - child: 1691-marguerite-hogue
-      - child: 1703-marie-j-hogue
+      - child: 1703-m-josephe-hogue
       - child: 1705-angelique-hogue
   - spouse: 'Jacques Amelot Sanpeur'
     children:

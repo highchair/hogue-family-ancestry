@@ -38,6 +38,13 @@ partners:
 
 ---
 
+## About
+
+Pierre dit St. Malo is father to 9 children with Jeanne Theodore. As far as we know right now, Pierre is the only son of his father, the first Hogue we could find. If it were not for them, and especially Jeanne, we would all not be here (at least not in the same way).
+
+Read generation 11 Marcel’s [Story of Pierre for more]({% link _posts/2017-12-25-story-of-pierre.md %}).
+
+
 ## Notes
 
 + Born in France in the same town as his father, Pierre moves to Canada at some point in his life according to the location of his death.

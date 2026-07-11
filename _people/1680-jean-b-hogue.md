@@ -32,8 +32,8 @@ partners:
     date: 1704-11-19
     location: 'Pointe-aux-Trembles, Quebec, Canada'
     children:
-      - child: 1705-marie-m-hogue
-      - child: 'Marie Madeleine Hogue (1707–1777, age 70y)'
+      - child: 1705-m-marguerite-hogue
+      - child: 1707-m-madeleine-hogue
       - child: 'Jean Baptiste Hogue (1709–?)'
       - child: 'Joseph Hogue (1711–1733, age 22y)'
       - child: 'Francois Hogue (1713–1763, age 50y)' # TO DO There is a reference to this person in Acknowledgments
@@ -51,7 +51,7 @@ partners:
 
 <span lang="fr">Jean Baptiste</span> is the first born son of Pierre Hogue dit St. Malo and Jeanne Theodore. He and partner Barbe live until an old age for that time. He marries Barbe when he is 24 and she is 18. They have a child soon after. They stay within the confines of New France’s growing Montreal establishment, and not much else is known.
 
-The name “<span lang="fr">Jean</span>” (French for John) is very common at the time and “<span lang="fr">Jean Baptiste</span>” was a variation that helps us tell them apart. In the Christian tradition at the time, boys have first names of Joseph while girls have first names of Marie — both being the names of Jesus’s parents. “<span lang="fr">Jean Baptiste</span>” references another popular name from scripture, John the Baptist.
+In the Christian tradition at the time, boys have first names of Joseph while girls have first names of Marie — both being the names of Jesus’s parents. The name “<span lang="fr">Jean</span>” (French for John) is also very common at the time and “<span lang="fr">Jean Baptiste</span>” was a common variation referencing another popular name from scripture, John the Baptist.
 
 
 ## Notes
