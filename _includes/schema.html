@@ -1,15 +1,3 @@
-{%- assign father = site.people | where: 'slug', page.parents.father -%}
-{%- if father[0] -%}
-  {% assign father_name = father[0].name %}
-{%- else -%}
-  {% assign father_name = page.parents.father %}
-{%- endif -%}
-{%- assign mother = site.people | where: 'slug', page.parents.mother -%}
-{%- if mother[0] -%}
-  {% assign mother_name = mother[0].name %}
-{%- else -%}
-  {% assign mother_name = page.parents.mother %}
-{%- endif -%}
 {%- assign person_name = '' -%}
 {%- assign person_born = '' -%}
 {%- assign person_born_location = '' -%}
@@ -20,6 +8,13 @@
 {%- else -%}
   {% assign person_name = page.name %}
 {% endif %}
+{%- comment -%}
+
+ For schema, we use either the born date or the baptized date as their DOB
+ Not all people have both.
+ Same with death date and burial dates.
+
+{%- endcomment -%}
 {%- if page.born.date or page.baptized.date -%}
   {% assign person_born = page.born.date %}
 {%- else -%}
@@ -39,6 +34,23 @@
   {% assign person_died_location = page.death.location %}
 {%- else -%}
   {% assign person_died_location = page.buried.location %}
+{%- endif -%}
+{%- assign father_name = page.parents.father -%}
+{%- assign father = site.people | where: 'slug', page.parents.father -%}
+{%- comment -%}
+
+ Fathers and Mothers may or may not have a person page of their own.
+ We check to see if there is one, and if there is not, we fall back
+ to the information provided on this person (child) page
+
+{%- endcomment -%}
+{%- if father[0] -%}
+  {% assign father_name = father[0].name %}
+{%- endif -%}
+{%- assign mother_name = page.parents.mother -%}
+{%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{%- if mother[0] -%}
+  {% assign mother_name = mother[0].name %}
 {%- endif -%}
 <script type="application/ld+json">
   {

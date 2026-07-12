@@ -3,7 +3,7 @@ layout: default
 ---
 
 {%- assign posts = site.posts | sort: date -%}
-{%- assign people = site.people | sort: slug -%}
+{%- assign people = site.people | sort: major_generation -%}
 
 <h1>{{ site.title }}</h1>
 
@@ -16,7 +16,16 @@ layout: default
 
 <h2>People</h2>
 <ul>
+{% assign generation_check = 0 %}
 {% for person in people %}
-  <li><a href="{{ person.url }}">{{ person.name }}</a> {% if person.born.date %}({{ person.born.date | date: "%Y" }}{% if person.death.date %}–{{ person.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
+  {% if person.layout != 'stub' %}
+    {% if person.major_generation %}
+      {% if person.major_generation != generation_check %}
+        <li><h3>Generation {{ person.major_generation }}</h3></li>
+        {% assign generation_check = person.major_generation %}
+      {% endif %}
+    {% endif %}
+    <li><a href="{{ person.url }}">{{ person.name }}</a> {% if person.born.date %}({{ person.born.date | date: "%Y" }}{% if person.death.date %}–{{ person.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
+  {% endif %}
 {% endfor %}
 </ul>
