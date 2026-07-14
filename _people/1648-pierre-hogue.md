@@ -9,9 +9,8 @@ major_generation: 2
 generation: 2.1
 revised-date: 2013-05-11
 
-parents:
-  father: 1625-jean-hogue
-  mother: 'Nicole Dubus (about 1627)'
+father: 1625-jean-hogue
+mother: 'Nicole Dubus'
 
 born: 
   date: 'about 1648'
@@ -28,13 +27,10 @@ buried:
 age-at-death: 'about 77y'
 
 partners:
-  # Both partners have pages of their own, so children are listed there
   - spouse: 1654-marie-m-nachita
-    date: 1672-11-22
-    location: 'Notre Dame, Montreal, Quebec, Canada'
+    union: '1648-pierre-hogue 1654-marie-m-nachita'
   - spouse: 1663-jeanne-theodore
-    date: 1676-11-10
-    location: 'Notre Dame, Montreal, Quebec'
+    union: '1648-pierre-hogue 1663-jeanne-theodore'
 
 ---
 
@@ -42,7 +38,7 @@ partners:
 
 Pierre dit St. Malo is father to 9 children with Jeanne Theodore. As far as we know right now, Pierre is the only son of his father, the first Hogue we could find. If it were not for them, and especially Jeanne, we would all not be here (at least not in the same way).
 
-Read generation 11 Marcel’s [Story of Pierre for more]({% link _posts/2017-12-25-story-of-pierre.md %}).
+Read (Generation 11.32) Marcel’s [Story of Pierre for more]({% link _posts/2017-12-25-story-of-pierre.md %}).
 
 
 ## Notes

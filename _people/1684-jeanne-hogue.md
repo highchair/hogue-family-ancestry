@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.6
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 1684-03-06
@@ -28,27 +27,21 @@ buried:
 age-at-death: '67y 4m'
 
 partners:
-  - spouse: 'Pierre Chartrand (Chartran) (1684–?), son of Thomas Chartrand and Marie Jeanne Mathon (Matou) Labrie'
-    date: 1702-05-15
-    location: 'Montreal, Quebec, Canada'
-    children:
-      - child: 'Marie Louise Chartrand (1703–?), Riviere-des-Prairies, Quebec, Canada; marries Simon Corbeil (Tranchemontagne) on 3 July 1730'
-      - child: 'Baby Chartrand (born & died 24 April 1705)'
-      - child: 'Marie Angelique Chartrand (1706–?), Riviere-des-Prairies, Quebec, Canada; marries Charles Corbeil (Tranchemontagne) on 15 October 1731'
-      - child: 'Marie Josephe Chartrand (1709–?), Riviere-des-Prairies, Quebec, Canada; marries Paul Lauzon on 10 April 1725'
-      - child: 'Armand Herman Chartrand (1711–?), Riviere-des-Prairies, Quebec, Canada; marries Marie Therese Corbeil (Tranchemontagne) on 29 July 1736'
-      - child: 'Marie Anne Chartrand (1715–?), Riviere-des-Prairies, Quebec, Canada'
-      - child: 'Elisabeth Isabelle Chartrand (1718–?), Riviere-des-Prairies, Quebec, Canada; marries Jacques Lacombe (?–14 April 1741 in Sault au Recollet, Quebec, Canada) on 2 May 1740'
-      - child: 'Pierre Chartrand (1720–?) Riviere-des-Prairies, Quebec, Canada; marries Marie Josephe Quevillon on 3 July 1741'
-      - child: 'Francois Chartrand (1723–1723, 0y), Rivieres-des-Prairies, Quebec, Canada'
-      - child: 'Jean Baptiste Chartrand (1727–1728, 1y), Rivieres-des-Prairies, Quebec, Canada'
-      - child: 'Jean Chartrand; marries Marguerite Corbeil'
-  - spouse: '(contract only) Pierre Guoguet, son of Jean Guoguet and ?'
-    date: 1734-11-14
+  - spouse: 'Pierre Chartrand (Chartran)'
+    union: '1684-jeanne-hogue 1684-pierre-chartrand'
+    spouse-parents: 'son of Thomas Chartrand and Marie Jeanne Mathon (Matou) Labrie'
+    spouse-born: 1684-04-27
+    spouse-born-location: 'Cote St. Dominique, Isle the Montreal, Quebec, Canada'
+    spouse-death: '2 December 1733 (buried)'
+  - spouse: 'Pierre Guoguet (contract only)'
+    spouse-parents: 'son of Jean Guoguet and ?'
+    union-date: 1734-11-14
     location:
-  - spouse: 'Jean (Jacques) Ranger (1708–?), son of Pierre Ranger and Marguerite Fortin'
-    date: 1735-01-24
-    location: 'Montreal, Quebec, Canada'
+  - spouse: 'Jean (Jacques) Ranger'
+    spouse-parents: 'son of Pierre Ranger and Marguerite Fortin'
+    spouse-born: 1708
+    union-date: 1735-01-24
+    union-location: 'Montreal, Quebec, Canada'
 
 ---
 

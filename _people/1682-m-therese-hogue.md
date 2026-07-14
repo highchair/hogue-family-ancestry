@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.5
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 1682-12-23
@@ -28,11 +27,14 @@ buried:
 age-at-death: '16y 7m'
 
 partners:
-  - spouse: 'Dominique Destree (or Detree, or Destraige) (1681–1741), son of Jean Detree and Marie Larose Salois'
-    date: 1698-11-22
-#    location:
-#    children:
-#      - child:
+  - spouse: 'Dominique Destree (or Detree, or Destraige)'
+    union:
+    union-date: 1698-11-22
+    union-location:
+    spouse-parents: 'son of Jean Detree and Marie Larose Salois'
+    spouse-born: 1681
+    spouse-born-location:
+    spouse-death: 1741
 
 ---
 

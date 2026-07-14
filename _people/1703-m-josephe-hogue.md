@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.11
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 1703-06-19
@@ -28,26 +27,22 @@ buried:
 age-at-death:
 
 partners:
-  - spouse: 'Pierre Cadieux, son of Pierre Cadieux & Marie Marguerite Menard (dit Fontaine) born 5 December 1697 in Dutremblay (Parish of Bourcherville), Quebec, Canada; died 30 June 1760 in Riviere-des-Prairies, Quebec, Canada, age 63'
-    date: 1722-10-26
-    location: 'Riviere-des-Prairies, Quebec, Canada'
-    children:
-      - child: 'Marie Anne Cadieux (27 July 1723–?); marries Jean Baptiste Quevillon in 1744'
-      - child: 'Francois Cadieux (20 May 1725–?); marries Marie Louise Quevillon in 1748'
-      - child: 'Marie Josephe Cadieux (8 July 1727–7 September 1730, age 3)'
-      - child: 'Marie Marguerite Cadieux (31 March 1729–?); marries Jean Baptiste Roy'
-      - child: 'Joseph Marie Cadieux (1 September 1730–?)'
-      - child: 'Marie-Josephe Amable Cadieux (1732–?); marries Joseph Maurice Lafantaisie in 1757'
-      - child: 'Joseph Cadieux (1734–?); marries Marie Angelique Lafantaisie in 1763'
-      - child: 'Armand Cadieux (?–?); marries Marie Joly in 1762'
-      - child: 'Marie Catherine Cadieux (1736–?); marries Louis Blais on 12 January 1767'
-      - child: 'Pierre Cadieux (1740–?); marries Marie Louise Brazo in 1762'
+  - spouse: 'Pierre Cadieux'
+    union: '1703-m-josephe-hogue 1697-pierre-cadieux'
+    spouse-parents: 'son of Pierre Cadieux & Marie Marguerite Menard (dit Fontaine)'
+    spouse-born: 1697-12-05
+    spouse-born-location: 'Dutremblay (Parish of Bourcherville), Quebec, Canada'
+    spouse-death: 1760-06-30
 
 ---
 
+## About
+
+Marie Josephe is the second to last daughter of Pierre and Jeanne Theodore, born nine years after her step-sibling [Francois Amelot]({% link _people/1694-francois-amelot.md %}) and 12 years after her nearest sister, [Marguerite]({% link _people/1691-marguerite-hogue.md %}). She is 19 years of age when she married Pierre Cadieux. Pierre’s residence at the time is shown as “Dutremblay, paroisse de Boucherville”, also spelled “Dutremble” in some source materials.
+
+
 ## Notes
 
-+ **Age at time of marriage** — Marie Josephe (Josephte) is 19 years of age and Pierre is 26 when they marry. Pierre’s residence at the time is shown as “Dutremblay, paroisse de Boucherville”, also spelled “Dutremble” in some source materials.
 + Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See (Generation 11.32) Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._
 
 <details markdown="1" class="rhythm">

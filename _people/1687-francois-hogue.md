@@ -1,6 +1,6 @@
 ---
 layout: person
-slug: 1685-francois-hogue
+slug: 1687-francois-hogue
 name: 'Francois Hogue'
 full-name:
 alt-names: []
@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.7
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 'about 1687'
@@ -28,29 +27,19 @@ buried:
 age-at-death: 'about 62y'
 
 partners:
-  - spouse: 'Marie Angelique Coiteux (Coetteux) (1697–1779), daughter of Jacques Coiteux and Barbe Dumets (Demers, Dumay)'
-    date: 1716-12-28
-    location: 'Pointe-aux-Trembles, Quebec, Canada'
-    children:
-      - child: 'Jacques (1717–1748, age 31) bm T x # X'
-      - child: 'Marie Josephe (1719–1737, age 18) bm T x # X'
-      - child: 'Francois Marie (#1) (Aug 1721–Nov 1721, 3mo.) b d T # X'
-      - child: 'Elisabeth (1721–1765, age 44) T x'
-      - child: 'Marie Marguerite (1723–1727, age 4) b d T # X'
-      - child: 'Madeleine (1725–1726, age 1) d T # X'
-      - child: 'Joachim (1727–?) bm T	x # X'
-      - child: 'Marie Anne (1729-?) b T x # X'
-      - child: 'Francois (#2) (1729–1730, age 1) T x'
-      - child: 'Marie Madeleine	(1731–1733, age 2) b d T x X'
-      - child: 'Joseph Amable (1734–?) bm X'
-      - child: 'Jean (1734–1745, age 11) d T x X'
-      - child: 'Jean Baptiste (1735–?) b T x X'
-      - child: 'Marie Barbe (1738–1738, age 0) b d T x X'
-      - child: 'Francois Marie (#3) (1738–1739, age 1) b d T X'
-      - child: 'M-Therese Catherine (1740–1777, age 37) bm T x X'
-      - child: 'Joseph (?–?) T x'
+  - spouse: 'Marie Angelique Coiteux (Coetteux)'
+    union: '1687-francois-hogue 1697-marie-angelique-coiteux'
+    spouse-parents: 'daughter of Jacques Coiteux and Barbe Dumets (Demers) (Dumay)'
+    spouse-born: 1697-11-10
+    spouse-born-location: 'Pointe-aux-Trembles, Quebec, Canada (baptized)'
+    spouse-death: 1779-03-01
 
 ---
+
+## About
+
+Marie Angelique Coiteux  is not the only child of Jacques Coetteux and Barbe Dumets that a Hogue will marry in this generation. [Francois’s brother Jean Baptiste]({% link _people/1680-jean-b-hogue.md %}) will marry who we believe to be M-Angelique’s sister, Barbe, named after her mother. [Francois’s sister Marguerite]({% link _people/1691-marguerite-hogue.md %}) will marry their brother, Jean, named after their father.
+
 
 ## Notes
 

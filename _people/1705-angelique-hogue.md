@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.12
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 'about 1705'
@@ -28,13 +27,21 @@ buried:
 age-at-death: 'about 50y'
 
 partners:
-  - spouse: 'Jean Archambault; parents and birth date unknown; died 9 May 1755'
-    date: 1729
-    location: ''
-#    children:
-#      - child:
+  - spouse: 'Jean Archambault'
+    union:
+    union-date: 1729
+    union-location:
+    spouse-parents: 'Unknown'
+    spouse-born:
+    spouse-born-location:
+    spouse-death: 1755-05-09
 
 ---
+
+## About
+
+Angelique is the youngest daughter of Pierre and Jeanne Theodore. They have her when he is 57 and she is 42 years old. All tolled, Jeanne had ten children over the course of 27 years.
+
 
 ## Notes
 
