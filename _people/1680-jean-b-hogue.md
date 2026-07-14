@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.4
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 1680-01-15
@@ -28,22 +27,12 @@ buried:
 age-at-death: '70y 1m'
 
 partners:
-  - spouse: 'Barbe Coiteux (Coetteux) (about 1686–1767, age 81y), daughter of Jacques Coetteux and Barbe Dumets (Demers, or Dumay, or Dumais)'
-    date: 1704-11-19
-    location: 'Pointe-aux-Trembles, Quebec, Canada'
-    children:
-      - child: 1705-m-marguerite-hogue
-      - child: 1707-m-madeleine-hogue
-      - child: 'Jean Baptiste Hogue (1709–?)'
-      - child: 'Joseph Hogue (1711–1733, age 22y)'
-      - child: 'Francois Hogue (1713–1763, age 50y)' # TO DO There is a reference to this person in Acknowledgments
-      - child: 'Jean Hogue (1715–1716, age 1y)'
-      - child: 'Marie Genevieve Hogue (1717–1747, age 30y)'
-      - child: 'Louis Hogue (March 1720–July 1720, age 3m)'
-      - child: 'Madeleine (1720–1777, age 57y)'
-      - child: 'Marie Elisabeth Hogue (1722–1765, age 43y)'
-      - child: 'Pierre Hogue (Aug 1725, dies at 9 days old)'
-      - child: 'Baby Boy Hogue (Sep 1727, dies at 1 day old)'
+  - spouse: 'Barbe Coiteux (Coetteux)'
+    union: '1680-jean-b-hogue 1686-barbe-coiteux'
+    spouse-parents: 'Jacques Coetteux and Barbe Dumets (Demers, or Dumay, or Dumais)'
+    spouse-born: 'about 1686'
+    spouse-born-location: 'Pointe-aux-Trembles, Quebec, Canada'
+    spouse-death: 1767-02-27
 
 ---
 
@@ -52,6 +41,8 @@ partners:
 <span lang="fr">Jean Baptiste</span> is the first born son of Pierre Hogue dit St. Malo and Jeanne Theodore. He and partner Barbe live until an old age for that time. He marries Barbe when he is 24 and she is 18. They have a child soon after. They stay within the confines of New France’s growing Montreal establishment, and not much else is known.
 
 In the Christian tradition at the time, boys have first names of Joseph while girls have first names of Marie — both being the names of Jesus’s parents. The name “<span lang="fr">Jean</span>” (French for John) is also very common at the time and “<span lang="fr">Jean Baptiste</span>” was a common variation referencing another popular name from scripture, John the Baptist.
+
+Barbe Coiteux is not the only child of Jacques Coetteux and Barbe Dumets that a Hogue will marry in this generation. [Jean’s brother Francois]({% link _people/1687-francois-hogue.md %}) will marry who we believe to be Barbe’s sister, Marie Angelique. [Jean’s sister Marguerite]({% link _people/1691-marguerite-hogue.md %}) will marry their brother, Jean, named after their father.
 
 
 ## Notes

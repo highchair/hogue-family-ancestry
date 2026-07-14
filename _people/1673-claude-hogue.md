@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.1
 revised-date: 2013-03-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1654-marie-m-nachita
+father: 1648-pierre-hogue
+mother: 1654-marie-m-nachita
 
 born: 
   date: 'about 1673'

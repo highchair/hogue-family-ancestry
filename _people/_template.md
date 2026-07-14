@@ -1,6 +1,6 @@
 ---
 layout: person
-slug: # Unique identifier
+slug: # Unique identifier: the documented year of birth or baptism, then name
 name: ''
 full-name:
 alt-names: [] # Maiden names
@@ -30,19 +30,22 @@ buried:
   location:
 age-at-death: # Use https://www.timeanddate.com/date/durationresult.html to calculate duration
 
-parents:
-  father:
-  mother:
+# If parent names are strings, not unique slugs, they MUST match in order for children to be queried
+father:
+mother:
 
-# Store the children with the Mother when we have enough information to create a page
-# Store the children with the Father if there will not be a page for the mother
+# If the spouse has no page of their own, use the FrontMatter below to store their metadata
+# Otherwise, use the unique IDs for spouse and union only
 
-#partners:
-#  - spouse:
-#    date:
-#    location:
-#    children:
-#      - child:
+partners:
+  - spouse:
+    union:
+    union-date: # Store here if no union exists in data.children
+    union-location: # Store here if no union exists in data.children
+    spouse-parents:
+    spouse-born:
+    spouse-born-location:
+    spouse-death:
 
 ---
 

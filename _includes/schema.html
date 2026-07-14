@@ -35,8 +35,6 @@
 {%- else -%}
   {% assign person_died_location = page.buried.location %}
 {%- endif -%}
-{%- assign father_name = page.parents.father -%}
-{%- assign father = site.people | where: 'slug', page.parents.father -%}
 {%- comment -%}
 
  Fathers and Mothers may or may not have a person page of their own.
@@ -44,11 +42,13 @@
  to the information provided on this person (child) page
 
 {%- endcomment -%}
+{%- assign father_name = page.father -%}
+{%- assign father = site.people | where: 'slug', page.father -%}
 {%- if father[0] -%}
   {% assign father_name = father[0].name %}
 {%- endif -%}
-{%- assign mother_name = page.parents.mother -%}
-{%- assign mother = site.people | where: 'slug', page.parents.mother -%}
+{%- assign mother_name = page.mother -%}
+{%- assign mother = site.people | where: 'slug', page.mother -%}
 {%- if mother[0] -%}
   {% assign mother_name = mother[0].name %}
 {%- endif -%}

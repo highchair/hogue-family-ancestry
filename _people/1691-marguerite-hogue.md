@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.9
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 'about 1691'
@@ -28,11 +27,20 @@ buried:
 age-at-death: 'about 95y'
 
 partners:
-  - spouse: 'Jacques Coiteux, son of Barbe Demets (Demers or Dumay), baptized 21 November 1683 and died 3 October 1758 in Riviere-des-Prairies, Quebec, Canada'
-    date: 1707-11-22
-    location: 'Montreal, Quebec, Canada'
+  - spouse: 'Jacques Coiteux'
+    spouse-parents: 'son of Jacques Coiteux & Barbe Demets (Demers or Dumay)'
+    spouse-born: '21 November 1683 (baptized)'
+    spouse-born-location: 'Pointe-aux-Trembles, Quebec, Canada (baptized)'
+    spouse-death: 1758-10-03
+    union-date: 1707-11-22
+    union-location: 'Montreal, Quebec, Canada'
 
 ---
+
+## About
+
+Children of this partnership are unknown at this time. Marguerite’s husband, Jacques Coiteaux, is brother to two of her brother’s wives, Barbe, who married [Jean Baptiste]({% link _people/1680-jean-b-hogue.md %}), and Marie Angelique, who married [Francois]({% link _people/1687-francois-hogue.md %}).
+
 
 ## Notes
 

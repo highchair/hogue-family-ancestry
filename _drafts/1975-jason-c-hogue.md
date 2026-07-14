@@ -27,12 +27,12 @@ age-at-death:
 
 partners:
   - spouse: 'Kathleen A. Griffin'
-    date: 1997-08-09
-    location: 'Fairfield, CT'
-    divorce: 'December 2004'
+    marriage-date: 1997-08-09
+    marriage-location: 'Fairfield, CT'
+    divorce-date: 'December 2004'
   - spouse: 1983-beth-a-alianiello
-    date: 2010-06-12
-    location: 'Pawtucket, RI'
+    marriage-date: 2010-06-12
+    marriage-location: 'Pawtucket, RI'
     children:
     - child: 'Vivian M. Alianiello (16 July 2011)'
     - child: 'Colette P. Hogue (25 November 2015)'

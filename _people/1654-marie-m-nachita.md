@@ -9,9 +9,8 @@ major_generation:
 generation:
 revised-date: 2013-05-11
 
-parents:
-  father: 'Unknown'
-  mother: 'Unknown'
+father:
+mother:
 
 born: 
   date: 'about 1654'
@@ -29,11 +28,7 @@ age-at-death: 'about 22y'
 
 partners:
   - spouse: 1648-pierre-hogue
-    date: 1672-11-22
-    location: 'Notre Dame, Montreal, Quebec, Canada'
-    children:
-      - child: 1673-claude-hogue
-      - child: 1675-pierre-hogue
+    union: '1648-pierre-hogue 1654-marie-m-nachita'
 
 ---
 

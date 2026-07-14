@@ -9,9 +9,8 @@ major_generation: 3
 generation: 3.8
 revised-date: 2013-06-27
 
-parents:
-  father: 1648-pierre-hogue
-  mother: 1663-jeanne-theodore
+father: 1648-pierre-hogue
+mother: 1663-jeanne-theodore
 
 born: 
   date: 'about 1689'

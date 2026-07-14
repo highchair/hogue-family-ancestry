@@ -9,19 +9,18 @@ major_generation:
 generation:
 revised-date: 2013-05-11
 
-parents:
-  father: 'Michel Theodore dit Gilles'
-  mother: 'Jacqueline Lagrange'
+father: 'Michel Theodore dit Gilles'
+mother: 'Jacqueline Lagrange'
 
 born: 
   date: 1663-08-08
   location:
 baptized:
   date: 1663-08-08
-  location: 'Montreal, Quebec, Canada '
+  location: 'Montreal, Quebec, Canada'
 death:
   date: 1730-06-09
-  location: 'Riviere-des-Prairies, Quebec, Canada '
+  location: 'Riviere-des-Prairies, Quebec, Canada'
 buried:
   date: 1730-06-09
   location: 'Riviere-des-Prairies, Quebec, Canada'
@@ -29,25 +28,13 @@ age-at-death: '66y 10m'
 
 partners:
   - spouse: 1648-pierre-hogue
-    date: 1676-11-10
-    location: 'Notre Dame, Montreal, Quebec'
-    children:
-      - child: 'Marie Anne Therese Hogue (1678–?)'
-      - child: 1680-jean-b-hogue
-      - child: 1682-m-therese-hogue
-      - child: 1684-jeanne-hogue
-      - child: 1685-francois-hogue
-      - child: 1689-genevieve-hogue
-      - child: 1691-marguerite-hogue
-      - child: 1703-m-josephe-hogue
-      - child: 1705-angelique-hogue
+    union: '1648-pierre-hogue 1663-jeanne-theodore'
   - spouse: 'Jacques Amelot Sanpeur'
-    children:
-      - child: 1694-francois-amelot
+    union: '1663-jeanne-theodore Jacques Amelot Sanpeur '
 
 ---
 
-# About
+## About
 
 The Hogue family would not have survived for long in New France without Jeanne Theodore. Not only does she play a strong role in the [finances of the family]({% link _posts/2017-12-25-story-of-pierre.md %}), but she bears two sons that will help produce 9 more sons. In total, Jeanne Theodore has 9 children of her own who go on to have a total of 54 children, most of whom have children of their own, though we do not know for sure who or how many.
 
