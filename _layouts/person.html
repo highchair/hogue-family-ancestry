@@ -127,13 +127,13 @@ layout: default
 <dl class="person__rels person__partners">
 {%- if page.partners.size > 0 -%}
   {%- for partner in page.partners -%}
+    {%- assign found_partner = site.people | where: 'slug', partner.spouse -%}
+    {%- assign union = site.data.children | where: 'partnership', partner.union -%}
     {%- if forloop.first -%}
-      <dt><h3>Partners</h3></dt>
+      <dt><h3>Partners{% if union[0].children .size > 0 %} and Children{% endif %}</h3></dt>
     {%- endif -%}
     <dd>
       <h4>{% include snippets/person-link.html string=partner.spouse %}</h4>
-      {%- assign found_partner = site.people | where: 'slug', partner.spouse -%}
-      {%- assign union = site.data.children | where: 'partnership', partner.union -%}
       {%- if partner.spouse-parents or partner.spouse-born or union[0].union-date or partner.spouse-death -%}
       <dl class="person__metadata">
         {%- if partner.spouse-parents -%}<dt>Parents:</dt><dd>{{ partner.spouse-parents }}</dd>{%- endif -%}
