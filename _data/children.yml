@@ -32,11 +32,11 @@
   union-date: 1676-11-10
   union-location: 'Notre Dame, Montreal, Quebec, Canada'
   children:
-  - child: 'Marie Anne Therese Hogue (1678–?)'
+  - child: 'Marie Anne Therese Hogue (1678 – ?)'
   - child: 1680-jean-b-hogue
   - child: 1682-m-therese-hogue
   - child: 1684-jeanne-hogue
-  - child: 1685-francois-hogue
+  - child: 1687-francois-hogue
   - child: 1689-genevieve-hogue
   - child: 1691-marguerite-hogue
   - child: 1703-m-josephe-hogue
@@ -79,60 +79,51 @@
   - child: 'Pierre Chartrand (1720–?) Riviere-des-Prairies, Quebec, Canada; marries Marie Josephe Quevillon on 3 July 1741'
   - child: 'Francois Chartrand (1723–1723, 0y), Rivieres-des-Prairies, Quebec, Canada'
   - child: 'Jean Baptiste Chartrand (1727–1728, 1y), Rivieres-des-Prairies, Quebec, Canada'
+  - child: 'Marie Angelique Chartrand (1706 – ?), Riviere-des-Prairies, Quebec, Canada; marries Charles Corbeil (Tranchemontagne) on 15 October 1731'
+  - child: 'Marie Josephe Chartrand (1709 – ?), Riviere-des-Prairies, Quebec, Canada; marries Paul Lauzon on 10 April 1725'
+  - child: 'Armand Herman Chartrand (1711 – ?), Riviere-des-Prairies, Quebec, Canada; marries Marie Therese Corbeil (Tranchemontagne) on 29 July 1736'
+  - child: 'Marie Anne Chartrand (1715 – ?), Riviere-des-Prairies, Quebec, Canada'
+  - child: 'Elisabeth Isabelle Chartrand (1718 – ?), Riviere-des-Prairies, Quebec, Canada; marries Jacques Lacombe (?–14 April 1741 in Sault au Recollet, Quebec, Canada) on 2 May 1740'
+  - child: 'Pierre Chartrand (1720 – ?) Riviere-des-Prairies, Quebec, Canada; marries Marie Josephe Quevillon on 3 July 1741'
+  - child: 'Francois Chartrand (1723 – 1723, 0y), Rivieres-des-Prairies, Quebec, Canada'
+  - child: 'Jean Baptiste Chartrand (1727 – 1728, 1y), Rivieres-des-Prairies, Quebec, Canada'
   - child: 'Jean Chartrand; marries Marguerite Corbeil'
 
 - partnership: '1687-francois-hogue 1697-marie-angelique-coiteux'
   union-date: 1716-12-28
   union-location: 'Pointe-aux-Trembles, Quebec, Canada'
   children:
-  - child: 'Jacques (1717–1748, age 31) bm T x # X'
-  - child: 'Marie Josephe (1719–1737, age 18) bm T x # X'
-  - child: 'Francois Marie (#1) (Aug 1721–Nov 1721, 3mo.) b d T # X'
-  - child: 'Elisabeth (1721–1765, age 44) T x'
-  - child: 'Marie Marguerite (1723–1727, age 4) b d T # X'
-  - child: 'Madeleine (1725–1726, age 1) d T # X'
-  - child: 'Joachim (1727–?) bm T	x # X'
-  - child: 'Marie Anne (1729-?) b T x # X'
-  - child: 'Francois (#2) (1729–1730, age 1) T x'
-  - child: 'Marie Madeleine	(1731–1733, age 2) b d T x X'
-  - child: 'Joseph Amable (1734–?) bm X'
-  - child: 'Jean (1734–1745, age 11) d T x X'
-  - child: 'Jean Baptiste (1735–?) b T x X'
-  - child: 'Marie Barbe (1738–1738, age 0) b d T x X'
-  - child: 'Francois Marie (#3) (1738–1739, age 1) b d T X'
-  - child: 'M-Therese Catherine (1740–1777, age 37) bm T x X'
-  - child: 'Joseph (?–?) T x'
 
 - partnership: '1703-m-josephe-hogue 1697-pierre-cadieux'
   union-date: 1722-10-26
   union-location: 'Riviere-des-Prairies, Quebec, Canada'
   children:
-  - child: 'Marie Anne Cadieux (27 July 1723–?); marries Jean Baptiste Quevillon in 1744'
-  - child: 'Francois Cadieux (20 May 1725–?); marries Marie Louise Quevillon in 1748'
-  - child: 'Marie Josephe Cadieux (8 July 1727–7 September 1730, age 3)'
-  - child: 'Marie Marguerite Cadieux (31 March 1729–?); marries Jean Baptiste Roy'
-  - child: 'Joseph Marie Cadieux (1 September 1730–?)'
-  - child: 'Marie-Josephe Amable Cadieux (1732–?); marries Joseph Maurice Lafantaisie in 1757'
-  - child: 'Joseph Cadieux (1734–?); marries Marie Angelique Lafantaisie in 1763'
-  - child: 'Armand Cadieux (?–?); marries Marie Joly in 1762'
-  - child: 'Marie Catherine Cadieux (1736–?); marries Louis Blais on 12 January 1767'
-  - child: 'Pierre Cadieux (1740–?); marries Marie Louise Brazo in 1762'
+  - child: 'Marie Anne Cadieux (27 July 1723 – ?); marries Jean Baptiste Quevillon in 1744'
+  - child: 'Francois Cadieux (20 May 1725 – ?); marries Marie Louise Quevillon in 1748'
+  - child: 'Marie Josephe Cadieux (8 July 1727 – 7 September 1730, age 3)'
+  - child: 'Marie Marguerite Cadieux (31 March 1729 – ?); marries Jean Baptiste Roy'
+  - child: 'Joseph Marie Cadieux (1 September 1730 – ?)'
+  - child: 'Marie-Josephe Amable Cadieux (1732 – ?); marries Joseph Maurice Lafantaisie in 1757'
+  - child: 'Joseph Cadieux (1734 – ?); marries Marie Angelique Lafantaisie in 1763'
+  - child: 'Armand Cadieux (? – ?); marries Marie Joly in 1762'
+  - child: 'Marie Catherine Cadieux (1736 – ?); marries Louis Blais on 12 January 1767'
+  - child: 'Pierre Cadieux (1740 – ?); marries Marie Louise Brazo in 1762'
 
 - partnership: '1705-m-marguerite-hogue 1704-jean-archambault'
   union-date: 1727-11-17
   union-location: 'Riviere-des-Prairies, Quebec, Canada'
   children:
-    - child: 'Baby Archambault (?–24 September 1728) in Riv.-des-Prairies, Quebec, Canada'
-    - child: 'Jean Archambault (about June 1729–?) in Contrecoeur, Quebec, Canada; marries Marie-Charlotte Bousquet 6 February 1754'
-    - child: 'Marie Josephe Archambault (2 April 1730–?) in Contrecoeur; marries Florentin Vigean 8 November 1751'
-    - child: 'Marie Genevieve Archambault (15 December 1734–?) in Chambly, Quebec, Canada; marries Joseph Lebrodeur 9 January 1758'
-    - child: 'Jean Baptiste Archambault (11 December 1736–?) in Contrecoeur; marries M-Francoise Bousquet 12 January 1761'
-    - child: 'Joseph Amable Archambault (bap. 6 January 1739–? in Contrecoeur; marries Mariedesanges Meunier Lapierre 18 October 1762'
-    - child: 'Pierre Archambault (4 April 1741–?) in St. Denis-sur Richelieu; marries Genevieve Tetro 23 January 1764'
-    - child: 'Claude Archambault (28 February 1744–29 February 1744) in St. Denis-sur Richelieu'
-    - child: 'Marie Madeleine Archambault (28 February 1744–1 March 1744) in St. Denis-sur Richelieu'
+    - child: 'Baby Archambault (? – 24 September 1728) in Riv.-des-Prairies, Quebec, Canada'
+    - child: 'Jean Archambault (about June 1729 – ?) in Contrecoeur, Quebec, Canada; marries Marie-Charlotte Bousquet 6 February 1754'
+    - child: 'Marie Josephe Archambault (2 April 1730 – ?) in Contrecoeur; marries Florentin Vigean 8 November 1751'
+    - child: 'Marie Genevieve Archambault (15 December 1734 – ?) in Chambly, Quebec, Canada; marries Joseph Lebrodeur 9 January 1758'
+    - child: 'Jean Baptiste Archambault (11 December 1736 – ?) in Contrecoeur; marries M-Francoise Bousquet 12 January 1761'
+    - child: 'Joseph Amable Archambault (bap. 6 January 1739 – ? in Contrecoeur; marries Mariedesanges Meunier Lapierre 18 October 1762'
+    - child: 'Pierre Archambault (4 April 1741 – ?) in St. Denis-sur Richelieu; marries Genevieve Tetro 23 January 1764'
+    - child: 'Claude Archambault (28 February 1744 – 29 February 1744) in St. Denis-sur Richelieu'
+    - child: 'Marie Madeleine Archambault (28 February 1744 – 1 March 1744) in St. Denis-sur Richelieu'
 
-- partnership: '1709-jean-b-hogue 1716-m-marguerite-brasseau'
+- partnership: '1709-jean-b-hogue Marie Marguerite Brasseau'
   union-date: 1734-02-15
   union-location: 'Riviere-des-Prairies, Quebec, Canada'
   children:
@@ -150,6 +141,38 @@
 
 - partnership: '1709-jean-b-hogue 1716-m-josephe-desranlot'
   union-date: 1758-02-01
-  union-location: 'St. Charles -sur-Richelieu, Quebec, Canada'
+  union-location: 'St. Charles-sur-Richelieu, Quebec, Canada'
   children:
     - child: 'Joseph Hogue (1758 - 1773)'
+
+- partnership: '1713-francois-hogue m-marguerite-tetrault'
+  union-date: 1734-11-03
+  union-location: 'Vecheres, Quebec, Canada'
+  children:
+    - child: 'Francois Amable Hogue (1735 – 1755)'
+    - child: 'Marie Catherine Hogue (1736 – ?)'
+    - child: 'Joseph Marie Hogue (1740 – ?)'
+    - child: 'Jean Baptiste Hogue (1741 – ?)'
+    - child: 'Marie Judith Hogue (1744 – ?)'
+    - child: 'Baby Hogue (1746 – 1746)'
+    - child: 'Baby Hogue (1748 – 1748)'
+    - child: 'Jean Louis Hogue (1749 – ?)'
+
+- partnership: '1713-francois-hogue 1729-therese-monarque'
+  union-date: 1751-02-08
+  union-location: 'Riviere-des-Prairies, Quebec, Canada'
+  children:
+    - child: 'Paul Amable Hogue (1751 – 1751)'
+    - child: 'Therese Hogue (1753 – 1753)'
+    - child: 'Marie Josephe Hogue (1753 – ?)'
+    - child: 'Marie Brigitte Hogue (1754 – ?)'
+
+- partnership: '1713-francois-hogue 1733-m-charlotte-lorrain'
+  union-date: 1755-02-09
+  union-location: 'Riviere-des-Prairies, Quebec, Canada'
+  children:
+    - child: 'Jean Marie Hogue (1758 – possibly 1759)'
+    - child: 'Marie Josephe Hogue (1759 – ?)'
+    - child: 'Marie Judith Hogue (1761 – ?)'
+    - child: 'Marie Amable Hogue (1763 – ?)'
+

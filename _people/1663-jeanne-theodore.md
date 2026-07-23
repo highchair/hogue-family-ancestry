@@ -30,7 +30,7 @@ partners:
   - spouse: 1648-pierre-hogue
     union: '1648-pierre-hogue 1663-jeanne-theodore'
   - spouse: 'Jacques Amelot Sanpeur'
-    union: '1663-jeanne-theodore Jacques Amelot Sanpeur '
+    union: '1663-jeanne-theodore Jacques Amelot Sanpeur'
 
 ---
 

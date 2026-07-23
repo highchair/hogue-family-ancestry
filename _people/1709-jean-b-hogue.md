@@ -37,7 +37,7 @@ mother: 'Barbe Coiteux (Coetteux)'
 
 partners:
   - spouse: 'Marie Marguerite Brasseau (Brazeau)'
-    union: '1709-jean-b-hogue 1716-m-marguerite-brasseau'
+    union: '1709-jean-b-hogue Marie Marguerite Brasseau'
     spouse-parents: 'daughter of Gabriel Brasseau and Angelique Handgrave (Angrave)'
     spouse-born: 1716-12-09
     spouse-born-location: 'Riviere-des-Prairies, Quebec, Canada (baptized)'
