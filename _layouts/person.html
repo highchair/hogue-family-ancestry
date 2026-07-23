@@ -94,7 +94,7 @@ layout: default
 {% comment %}
 
   Children of partnerships are stored in data.children
-  To find siblings, we need to loop through all children to find where mother or father match
+  To find siblings, we loop through all children to find where mother or father match
 
 {% endcomment %}
 {%- assign all_partnerships = site.data.children -%}
@@ -105,20 +105,16 @@ layout: default
   {%- endif -%}
 {%- endfor -%}
 {%- if siblings.size > 0 -%}
-<dl class="person__rels person__siblings">
-  <dt><h4>Siblings{% if siblings.size > 1 %} and Step-siblings{% endif %}</h4></dt>
+<details class="rhythm">
+  <summary><h4 style="display: inline;">Siblings{% if siblings.size > 1 %} and Step-siblings{% endif %}</h4></summary>
+  <ol class="person__rels person__siblings">
   {%- for sib in siblings -%}
-    {%- if forloop.first -%}
-      <dd><ol>
-    {%- endif -%}
     {%- for child in sib.children -%}
       <li>{% if child.child == page.slug %}<s aria-current="page">{% endif %}{% include snippets/person-link.html string=child.child %}{% if child.child == page.slug %}</s>{% endif %}</li>
     {%- endfor -%}
-    {%- if forloop.last -%}
-      </ol></dd>
-    {%- endif -%}
   {%- endfor -%}
-</dl>
+  </ol>
+</details>
 {%- endif -%}
 
 {%- comment -%}
@@ -174,21 +170,21 @@ layout: default
 {%- if page.father and page.mother -%}
   <h2>Lineage</h2>
   <ol class="person__lineage" reversed>
-    {% comment %} This currently loops 18 generations deep {% endcomment %}
-    {% for counter in (0..17) %}
-      {% if forloop.first %}
-        {% comment %} The first time through, the child is the person who is this page — J. as child, Marcel as Father {% endcomment %}
-        {% assign child = page %}
-        {% assign father = site.people | where: 'slug', page.father %}
-        {% assign mother = site.people | where: 'slug', page.mother %}
-      {% else %}
-        {% comment %} The second time through, the child is the previous father and now we look for that father's father — Marcel becomes Child, Father is now Marcel's Father {% endcomment %}
-        {% assign child = father[0] %}
-        {% assign father = site.people | where: 'slug', child.father %}
-        {% assign mother = site.people | where: 'slug', child.mother %}
-      {% endif %}
+  {% comment %} This currently loops 18 generations deep {% endcomment %}
+  {%- for counter in (0..17) -%}
+    {%- if forloop.first -%}
+      {% comment %} The first time through, the child is the person who is this page — J. as child, Marcel as Father {% endcomment %}
+      {% assign child = page %}
+      {% assign father = site.people | where: 'slug', page.father %}
+      {% assign mother = site.people | where: 'slug', page.mother %}
+    {%- else -%}
+      {% comment %} The second time through, the child is the previous father and now we look for that father's father — Marcel becomes Child, Father is now Marcel's Father {% endcomment %}
+      {% assign child = father[0] %}
+      {% assign father = site.people | where: 'slug', child.father %}
+      {% assign mother = site.people | where: 'slug', child.mother %}
+    {%- endif -%}
 
-      {% if father[0].name %}
+    {% if father[0].name %}
       <li>{{ child.name }}, child of 
         {% if father[0].name %}
           <a href="/person/{{ father[0].slug }}">{{ father[0].name }}</a> {% if father[0].born.date %}({{ father[0].born.date | date: "%Y" }}{% if father[0].death.date %}–{{ father[0].death.date | date: "%Y" }}{% endif %}{% endif %})
@@ -201,10 +197,10 @@ layout: default
           and {{ child.mother }}
         {% endif %}
       </li>
-      {% else %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
+    {% else %}
+      {% break %}
+    {% endif %}
+  {%- endfor -%}
   </ol>
 {% endif %}
 
