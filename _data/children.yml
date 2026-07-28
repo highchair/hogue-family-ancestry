@@ -55,13 +55,13 @@
   - child: 1705-m-marguerite-hogue
   - child: 1707-m-madeleine-hogue
   - child: 1709-jean-b-hogue
-  - child: 'Joseph Hogue (1711–1733, age 22y)'
-  - child: 'Francois Hogue (1713–1763, age 50y)' # TO DO There is a reference to this person in Acknowledgments
-  - child: 'Jean Hogue (1715–1716, age 1y)'
-  - child: 'Marie Genevieve Hogue (1717–1747, age 30y)'
-  - child: 'Louis Hogue (March 1720–July 1720, age 3m)'
-  - child: 'Madeleine (1720–1777, age 57y)'
-  - child: 'Marie Elisabeth Hogue (1722–1765, age 43y)'
+  - child: 1711-joseph-hogue
+  - child: 1713-francois-hogue
+  - child: 1715-jean-hogue
+  - child: 1717-m-genevieve-hogue
+  - child: 1715-louis-hogue
+  - child: 'Madeleine (1720 – 1777, age 57y)'
+  - child: 'Marie Elisabeth Hogue (1722 – 1765, age 43y)'
   - child: 'Pierre Hogue (Aug 1725, dies at 9 days old)'
   - child: 'Baby Boy Hogue (Sep 1727, dies at 1 day old)'
 
@@ -69,16 +69,8 @@
   union-date: 1702-05-15
   union-location: 'Montreal, Quebec, Canada'
   children:
-  - child: 'Marie Louise Chartrand (1703–?), Riviere-des-Prairies, Quebec, Canada; marries Simon Corbeil (Tranchemontagne) on 3 July 1730'
+  - child: 'Marie Louise Chartrand (1703 – ?), Riviere-des-Prairies, Quebec, Canada; marries Simon Corbeil (Tranchemontagne) on 3 July 1730'
   - child: 'Baby Chartrand (born & died 24 April 1705)'
-  - child: 'Marie Angelique Chartrand (1706–?), Riviere-des-Prairies, Quebec, Canada; marries Charles Corbeil (Tranchemontagne) on 15 October 1731'
-  - child: 'Marie Josephe Chartrand (1709–?), Riviere-des-Prairies, Quebec, Canada; marries Paul Lauzon on 10 April 1725'
-  - child: 'Armand Herman Chartrand (1711–?), Riviere-des-Prairies, Quebec, Canada; marries Marie Therese Corbeil (Tranchemontagne) on 29 July 1736'
-  - child: 'Marie Anne Chartrand (1715–?), Riviere-des-Prairies, Quebec, Canada'
-  - child: 'Elisabeth Isabelle Chartrand (1718–?), Riviere-des-Prairies, Quebec, Canada; marries Jacques Lacombe (?–14 April 1741 in Sault au Recollet, Quebec, Canada) on 2 May 1740'
-  - child: 'Pierre Chartrand (1720–?) Riviere-des-Prairies, Quebec, Canada; marries Marie Josephe Quevillon on 3 July 1741'
-  - child: 'Francois Chartrand (1723–1723, 0y), Rivieres-des-Prairies, Quebec, Canada'
-  - child: 'Jean Baptiste Chartrand (1727–1728, 1y), Rivieres-des-Prairies, Quebec, Canada'
   - child: 'Marie Angelique Chartrand (1706 – ?), Riviere-des-Prairies, Quebec, Canada; marries Charles Corbeil (Tranchemontagne) on 15 October 1731'
   - child: 'Marie Josephe Chartrand (1709 – ?), Riviere-des-Prairies, Quebec, Canada; marries Paul Lauzon on 10 April 1725'
   - child: 'Armand Herman Chartrand (1711 – ?), Riviere-des-Prairies, Quebec, Canada; marries Marie Therese Corbeil (Tranchemontagne) on 29 July 1736'
@@ -93,6 +85,23 @@
   union-date: 1716-12-28
   union-location: 'Pointe-aux-Trembles, Quebec, Canada'
   children:
+  - child: 'Jacques (1717 – 1748, age 31) bm T x # X'
+  - child: 'Marie Josephe (1719 – 1737, age 18) bm T x # X'
+  - child: 'Francois Marie (#1) (Aug 1721 – Nov 1721, 3mo.) b d T # X'
+  - child: 'Elisabeth (1721 – 1765, age 44) T x'
+  - child: 'Marie Marguerite (1723 – 1727, age 4) b d T # X'
+  - child: 'Madeleine (1725 – 1726, age 1) d T # X'
+  - child: 'Joachim (1727 – ?) bm T	x # X'
+  - child: 'Marie Anne (1729 – ?) b T x # X'
+  - child: 'Francois (#2) (1729 – 1730, age 1) T x'
+  - child: 'Marie Madeleine	(1731 – 1733, age 2) b d T x X'
+  - child: 'Joseph Amable (1734 – ?) bm X'
+  - child: 'Jean (1734 – 1745, age 11) d T x X'
+  - child: 'Jean Baptiste (1735 – ?) b T x X'
+  - child: 'Marie Barbe (1738 – 1738, age 0) b d T x X'
+  - child: 'Francois Marie (#3) (1738 – 1739, age 1) b d T X'
+  - child: 'M-Therese Catherine (1740 – 1777, age 37) bm T x X'
+  - child: 'Joseph (? – ?) T x'
 
 - partnership: '1703-m-josephe-hogue 1697-pierre-cadieux'
   union-date: 1722-10-26
@@ -130,7 +139,7 @@
     - child: 'Marie Anne Hogue (1735 - ?)'
     - child: 'Marie Marguerite Hogue (1739 - 1780)'
     - child: 'Jean Baptiste Amable Hogue (1737 - 1756)'
-    - child: 'Jean Marie Hogue (1740 - ?)'
+    - child: 1740-jean-marie-hogue
     - child: 'Joseph Amable Hogue (1742 - ?)'
     - child: 'Marie Amable Hogue (1744 - 1776)'
     - child: 'Marie Josephe (1745 - ?)'
@@ -175,4 +184,40 @@
     - child: 'Marie Josephe Hogue (1759 – ?)'
     - child: 'Marie Judith Hogue (1761 – ?)'
     - child: 'Marie Amable Hogue (1763 – ?)'
+
+- partnership: '1717-m-genevieve-hogue 1708-augustin-gaulin'
+  union-date: 1735-06-06
+  union-location: 'Riviere-des-Prairies, Quebec, Canada'
+  children:
+    - child: 'Genevieve Amable Gaulin (1 April 1739 – ?); married 13 May 1754 to Louis Beaulieu; married 1759 to Bastien Laville'
+    - child: 'Barbe Amable Gaulin (28 March 1742 – ?); married 5 February 1759 to Jean Baptiste Valiquet'
+    - child: 'M. Madeleine Amable Gaulin (11 October 1743 – ?)'
+    - child: 'Marie Gaulin (? – ?); married 5 February 1759 to Jean Baptiste Valiquet; married 31 March 1761 to Julien Leblan'
+    - child: 'M. Therese Amable Gaulin (6 August 1746 – 17 August 1746, 11 days)'
+    - child: 'Augustin Amable Gaulin (8 November 1747 (bap.) – 29 April 1748, 5m 21d)'
+
+- partnership: '1740-jean-marie-hogue Marie Amable Brodeur'
+  union-date: 1763-11-21
+  union-location: 'St. Charles-sur-Richelieu, Quebec, Canada'
+  children:
+    - child: 1767-jean-marie-hogue
+    - child: 'Marie Josephe Hogue (14 February 1770 – 4 July 1770)'
+    - child: 'Francois Xavier Hogue (1772 – ?)'
+    - child: 'Marie Amable Hogue (1775 – ?)'
+    - child: 'Jean Baptiste Hogue (1778 – ?)'
+
+- partnership: '1767-jean-marie-hogue Marie Anne Casavant'
+  union-date: 1793-06-24
+  union-location: 'St. Charles-sur-Richelieu, Quebec, Canada'
+  children:
+    - child: 'Jean Marie Hogue (? – ?); married M. Louise Thouin in 1812'
+    - child: 'Andre Hogue (1796 – ?)'
+    - child: 'Pierre Hogue (1798 – ?)'
+    - child: 'Francois Xavier Hogue (b/bap: 17 June 1800 d/bur: 3/4 Sep 1800, St. Hyacinth)'
+    - child: 'Joseph Hogue (b/bap: circa 1819 d/bur: March 1821, St. Pierre, Sorel)'
+    - child: 'Catherine Hogue (married Charles Gagnon in 1820)'
+    - child: 'Antoine Hogue (married Elizabeth Smith in 1827)'
+    - child: 'Marguerite Hogue (married Ambroise Dumas in 1828)'
+    - child: 1815-michel-hogue
+    - child: 'Jean Baptiste Hogue (married Julie Langlais in 1836)'
 
