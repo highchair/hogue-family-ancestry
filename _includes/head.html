@@ -19,6 +19,12 @@
     max-width: 50rem;
   }
 
+  ul.no-decoration, ol.no-decoration {
+    list-style-type: none;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+  }
+
   /*dl*/ .person__metadata {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -39,6 +45,21 @@
     h4 + ol {
       margin-block-start: -1rem;
       margin-block-end: 1.5rem;
+    }
+  }
+
+  .gallery {
+    position: relative;
+    width: 90vw;
+    overflow-y: scroll;
+
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    figure img {
+      max-height: 80vh;
     }
   }
 </style>
