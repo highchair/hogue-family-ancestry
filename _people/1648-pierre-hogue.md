@@ -38,6 +38,8 @@ partners:
 
 Pierre dit St. Malo is father to 9 children with Jeanne Theodore. As far as we know right now, Pierre is the only son of his father, the first Hogue we could find. If it were not for them, and especially Jeanne, we would all not be here (at least not in the same way).
 
+Pierre lives to be in his seventies, which is unusual for the time period. [There is data that goes back to the early 1800s](https://ourworldindata.org/profile/population-demography/france#what-is-france-s-life-expectancy), indicating that the average life span in France was 40 years. [Canada has similar data](https://ourworldindata.org/profile/population-demography/canada#what-is-canada-s-life-expectancy) that starts in the early 1800s.
+
 Read (Generation 11.32) Marcel’s [Story of Pierre for more]({% link _posts/2017-12-25-story-of-pierre.md %}).
 
 

@@ -27,12 +27,11 @@ age-at-death: 'about 51y'
 
 partners:
   - spouse: 'Nicole Dubus'
+    union: '1625-jean-hogue Nicole Dubus'
     spouse-parents:
     spouse-born: 'about 1627'
     spouse-born-location: 'N.D. de Bellefontaine, Amiens, Picardie, France'
     spouse-death:
-    union: '1625-jean-hogue 1627-nicole-dubus'
-    divorce-date:
 
 ---
 
@@ -40,6 +39,9 @@ partners:
 
 Not much is known about our earliest ancestor. Born in France, Jean marries Nicole Dubus at age 21 while she is about 19. They have one child that we know of.
 
+Jean likely had siblings, and Jean and Nicole likely had more children. Pierre is he only one for whom we found records. Families in the 1600s and 1700s were on average four to six children for various reasons. In Europe, where mortality rates were lower, family size might have been smaller. In the “New World” (Canada and the Americas), they might have been larger as mortality rates were higher (fewer doctors and specialists, further away) and more hands were needed to work fields.
+
+See [an article by Mike Gravel about family size in the 1600s](https://www.mikegravel.org/how-large-were-families-in-the-1600s/).
 
 ## Notes
 
