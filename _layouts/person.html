@@ -163,6 +163,40 @@ layout: default
 
 <hr />
 
+{%- assign father_media = site.media | where_exp: "item", "item.people contains page.slug" -%}
+{%- assign mother_media = "" | split: "" -%}
+{%- for partner in page.partners -%}
+  {%- assign matches = site.media | where_exp: "item", "item.people contains partner.spouse" -%}
+  {%- assign mother_media = mother_media | concat: matches -%}
+{%- endfor -%}
+{%- assign media_items = father_media | concat: mother_media | uniq | sort: "date" -%}
+{%- if media_items.size > 0 -%}
+<div class="gallery">
+  <ul class="no-decoration">
+{%- for media in media_items -%}
+  <li><figure>
+    <img src="{{ site.media_source }}{{ media.media }}" alt="" />
+    <figcaption>
+      <dl>
+        <dt>Caption</dt>
+        <dd>{{ media.caption }}</dd>
+      {%- if media.location -%}
+        <dt>Location</dt>
+        <dd>{{ media.location }}</dd>
+      {%- endif -%}
+      {%- if media.display_date -%}
+        <dt>Date</dt>
+        <dd>{{ media.display_date }}</dd>
+      {%- endif -%}
+    </figcaption>
+  </figure></li>
+{%- endfor -%}
+  </ul>
+</div>
+
+<hr />
+
+{%- endif -%}
 {{ page.content }}
 
 <hr />
@@ -173,37 +207,27 @@ layout: default
   {% comment %} This currently loops 18 generations deep {% endcomment %}
   {%- for counter in (0..17) -%}
     {%- if forloop.first -%}
-      {% comment %} The first time through, the child is the person who is this page — J. as child, Marcel as Father {% endcomment %}
-      {% assign child = page %}
-      {% assign father = site.people | where: 'slug', page.father %}
-      {% assign mother = site.people | where: 'slug', page.mother %}
+      {%- comment -%} The first time through, the child is the person who is this page — J. as child, Marcel as Father {%- endcomment -%}
+      {%- assign child = page -%}
+      {%- assign father = site.people | where: 'slug', page.father -%}
+      {%- assign mother = site.people | where: 'slug', page.mother -%}
     {%- else -%}
-      {% comment %} The second time through, the child is the previous father and now we look for that father's father — Marcel becomes Child, Father is now Marcel's Father {% endcomment %}
-      {% assign child = father[0] %}
-      {% assign father = site.people | where: 'slug', child.father %}
-      {% assign mother = site.people | where: 'slug', child.mother %}
+      {%- comment -%} The second time through, the child is the previous father and now we look for that father's father — Marcel becomes Child, Father is now Marcel's Father {%- endcomment -%}
+      {%- assign child = father[0] %}
+      {%- assign father = site.people | where: 'slug', child.father -%}
+      {%- assign mother = site.people | where: 'slug', child.mother -%}
     {%- endif -%}
 
-    {% if father[0].name %}
-      <li>{{ child.name }}, child of 
-        {% if father[0].name %}
-          <a href="/person/{{ father[0].slug }}">{{ father[0].name }}</a> {% if father[0].born.date %}({{ father[0].born.date | date: "%Y" }}{% if father[0].death.date %}–{{ father[0].death.date | date: "%Y" }}{% endif %}{% endif %})
-        {% else %}
-          {{ child.father }}
-        {% endif %}
-        {% if mother[0].name %}
-          and <a href="/person/{{ mother[0].slug }}">{{ mother[0].name }}</a> {% if mother[0].born.date %}({{ mother[0].born.date | date: "%Y" }}{% if mother[0].death.date %}–{{ mother[0].death.date | date: "%Y" }}{% endif %}{% endif %})
-        {% else %}
-          and {{ child.mother }}
-        {% endif %}
-      </li>
-    {% else %}
+    {%- if father[0].name -%}
+      <li>{{ child.name }}, child of <a href="/person/{{ father[0].slug }}">{{ father[0].name }}</a> {% if father[0].born.date %}({{ father[0].born.date | date: "%Y" }}{% if father[0].death.date %}–{{ father[0].death.date | date: "%Y" }}{% endif %}{% endif %}) {% if mother[0].name %} and <a href="/person/{{ mother[0].slug }}">{{ mother[0].name }}</a> {% if mother[0].born.date %}({{ mother[0].born.date | date: "%Y" }}{% if mother[0].death.date %}–{{ mother[0].death.date | date: "%Y" }}{% endif %}{% endif %}){% else %} and {{ child.mother }}{% endif %}</li>
+    {%- else -%}
+      <li>{{ child.name }} {% if child.born.date %}({{ child.born.date | date: "%Y" }}{% if child.death.date %}–{{ child.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
       {% break %}
-    {% endif %}
+    {%- endif -%}
   {%- endfor -%}
   </ol>
 {% endif %}
 
 {% if page.revised-date %}
-  <p><i><b>Last revised/updated</b> {{ page.revised-date | date: "%e %B %Y"}}</i></p>
+  <p><i><b>Last revised/updated</b> {{ page.revised-date | date: "%e %B %Y" }}</i></p>
 {% endif %}

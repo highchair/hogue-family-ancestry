@@ -25,6 +25,8 @@ url: "http://127.0.0.1:6040" # the base hostname & protocol for your site, e.g. 
 prod_url: "https://hogue-family-tree.highchairdesign.com"
 destination: _site/
 
+media_source: '/media/'
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -42,6 +44,8 @@ collections:
   people:
     output: true
     permalink: /person/:slug/
+  media:
+    output: false
   posts:
     output: true
     permalink: /posts/:slug/
@@ -67,5 +71,5 @@ exclude:
   - .htaccess
   - .nova/
   - LICENSE
-  - readme.md
+  - README.md
   - sources

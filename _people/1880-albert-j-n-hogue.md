@@ -28,7 +28,7 @@ father: 1846-francois-hogue
 mother: 'Marie Lemere'
 
 partners:
-  - spouse: 'Juvenile (neé Juvenie) Champagne'
+  - spouse: 'Juvenile “Juvenie“ Champagne'
     union: '1880-albert-j-n-hogue Juvenile Champagne'
     spouse-parents: 'daughter of Francois Champagne & Adele Champagne Lambert'
     spouse-born: 1880-10-01
@@ -39,7 +39,7 @@ partners:
 
 ## About
 
-Albert was given the extra middle name of <span lang="fr">Noel</span>, meaning Christmas, because he was born the day before. The fifth of 11 children, Albert was born to a busy household after the close of the Civil War but right before the start of the new century, when industrialization would propel rapid growth and job creation in New England.
+Albert was given the extra middle name of <span lang="fr">Noel</span>, meaning Christmas, because he was born the day before. The fifth of 11 children, Albert was born to a busy household after the close of the Civil War but right before the start of the new century, when industrialization would propel rapid growth and job creation in New England. He and Juvenile moved to Woonsocket in 1895 according to a newspaper clipping celebrating their 50 years of marriage.
 
 He and <span lang="fr">Juvenile</span> would marry in 1900, both at the age of 20. They would go on to have 13 children together in the span of 22 years. Quick napkin math tells us that <span lang="fr">Juvenile</span> was pregnant 117 months out of about 264, with shorter gaps in the beginning and larger gaps towards the end of the 13 kids. <span lang="fr">Juvenile</span> died 18 years before Albert at age 76 while he loved to be a very respectable 93 years old, just two months shy of 94.
 
