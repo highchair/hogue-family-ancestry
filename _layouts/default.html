@@ -2,7 +2,119 @@
 <html lang="en">
 
   {% include head.html %}
-
+{%- if page.slug == "family-tree" -%}
+  <style>
+    body {
+      background-color: #fff2e9; /* 🍑 Very light peach */
+    }
+    #tree-container {
+      position: relative;
+      width: 100vw;
+      height: 90vh;
+      border: 1px solid #ccc;
+    }
+    #tree-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .hover-glow rect {
+      stroke: #000;
+      stroke-width: 2;
+      filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+      transition: all 0.3s ease;
+    }
+    .connector.hovered {
+      stroke-width: 4 !important;
+    }
+    .person-card rect {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    .person-card:hover rect {
+      filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    .person-card text {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .reset-button {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      background-color: #fce8e0;
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+      z-index: 10;
+    
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .reset-button:hover {
+      transform: scale(1.1);
+      background-color: #fff;
+    }
+    .reset-button svg {
+      width: 20px;
+      height: 20px;
+      stroke: #333;
+    }
+    @media (max-width: 768px) {
+      .reset-button {
+        width: 42px;
+        height: 42px;
+        bottom: 16px;
+        right: 16px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+      .reset-button svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      #tree-container {
+        height: 80vh;
+        border: none;
+      }
+      .reset-button {
+        top: 16px;
+        right: 16px;
+        transform: scale(0.9);
+      }
+      .person-card rect {
+        transform: scale(0.9);
+      }
+      .person-card:hover rect {
+        transform: scale(1.0);
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .person-card text {
+        font-size: 11px !important;
+      }
+      .person-card text:nth-of-type(2) {
+        font-size: 10px !important;
+      }
+    }
+  </style>
+{%- endif -%}
   <body class="no-js{% if page.layout %} l-{{ page.layout }}{% endif %}">
     <div id="page-top" class="l">
       <!--<a href="#content" class="u__sr-only u__sr-only--focusable skip-link">Skip to Content</a>-->
@@ -22,5 +134,9 @@
     </div>
 
     {% include scripts.html %}
+  {%- if page.slug == "family-tree" -%}
+    <script src="/assets/js/d3.js"></script>
+    <script src="/assets/js/family-tree.js"></script>
+  {%- endif -%}
   </body>
 </html>

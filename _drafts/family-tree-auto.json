@@ -1,0 +1,31 @@
+---
+{% comment %}
+
+There are problems outputting the proper JSON for a complex family:
+1. This visualization assumes all people have only one partner
+2. When things get messy immediately, i.e. Pierre dit St Malo has two marriages, the tree breaks down
+3. The visualization assumes all children flow through the male
+
+Therefore, as painful as it might be, we are relying on a hand-curated JSON file for the family tree
+
+{% endcomment %}
+---
+{%- assign all_people = site.people -%}
+{%- assign ignore = "1654-marie-m-nachita" -%}
+[
+{% for person in all_people %}
+{%- unless ignore contains person.slug -%}
+  {%- assign kids = site.people | where: "father", person.slug -%}
+  {
+    "id": "{{ person.slug }}",
+    "name": "{{ person.name }}",
+    "birth": "{{ person.born.date | date: "%Y" }}",
+    "death": "{{ person.death.date | date: "%Y" }}",
+    "spouse": "{{ person.partners[0].spouse }}",
+    "parents": [ "{{ person.father }}", "{{ person.mother }}" ],{% if kids.size > 0 %}
+    "children": [ {% for kid in kids %}"{{ kid.slug }}"{% unless forloop.last %}, {% endunless %}{% endfor %} ],{% endif %}
+    "photo": "/path/to/image.jpg"
+  }{% unless forloop.last %},{% endunless %}
+{%- endunless -%}
+{% endfor %}
+]

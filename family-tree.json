@@ -1,0 +1,462 @@
+[
+  {
+    "id": "1625-jean-hogue",
+    "name": "Jean Hogue",
+    "birth": "about 1625",
+    "death": "1676",
+    "spouse": "1627-nicole-dubus",
+    "parents": [ "", "" ],
+    "children": [ "1648-pierre-hogue" ]
+  },
+  {
+    "id": "1627-nicole-dubus",
+    "name": "Nicole Dubus",
+    "birth": "about 1627",
+    "death": "?",
+    "spouse": "1625-jean-hogue"
+  },
+  {
+    "id": "1648-pierre-hogue",
+    "name": "Pierre Hogue dit St. Malo",
+    "birth": "about 1648",
+    "death": "1725",
+    "spouse": "1663-jeanne-theodore",
+    "parents": [ "1625-jean-hogue", "1627-nicole-dubus" ],
+    "children": [ "Marie Anne Therese Hogue", "1680-jean-b-hogue", "1682-m-therese-hogue", "1684-jeanne-hogue", "1687-francois-hogue", "1689-genevieve-hogue", "1691-marguerite-hogue", "1703-m-josephe-hogue", "1705-angelique-hogue" ]
+  },
+  {
+    "id": "1663-jeanne-theodore",
+    "name": "Jeanne Theodore",
+    "birth": "1663",
+    "death": "1730",
+    "spouse": "1648-pierre-hogue"
+  },
+  {
+    "id": "1680-jean-b-hogue",
+    "name": "Jean Baptiste Hogue",
+    "birth": "1680",
+    "death": "1750",
+    "spouse": "1686-barbe-coiteux",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ],
+    "children": [ "1705-m-marguerite-hogue", "1707-m-madeleine-hogue", "1709-jean-b-hogue", "1711-joseph-hogue", "1713-francois-hogue", "1715-jean-hogue", "1717-m-genevieve-hogue", "1715-louis-hogue" ]
+  },
+  {
+    "id": "1686-barbe-coiteux",
+    "name": "Barbe Coiteux",
+    "birth": "1686",
+    "death": "1767",
+    "spouse": "1680-jean-b-hogue"
+  },
+  {
+    "id": "1682-m-therese-hogue",
+    "name": "M. Therese Hogue",
+    "birth": "1682",
+    "death": "1699",
+    "spouse": "1681-dominique-destree",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1681-dominique-destree",
+    "name": "Dominique Destree",
+    "birth": "1681",
+    "death": "1741",
+    "spouse": "1682-m-therese-hogue"
+  },
+  {
+    "id": "1684-jeanne-hogue",
+    "name": "Jeanne Hogue",
+    "birth": "1684",
+    "death": "1751",
+    "spouse": "1684-pierre-chartrand",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1684-pierre-chartrand",
+    "name": "Pierre Chartrand",
+    "birth": "1684",
+    "death": "1733",
+    "spouse": "1684-jeanne-hogue",
+    "parents": [ "Thomas Chartrand", "Marie Jeanne Mathon (Matou) Labrie" ]
+  },
+  {
+    "id": "1687-francois-hogue",
+    "name": "Francois Hogue",
+    "birth": "about 1687",
+    "death": "1749",
+    "spouse": "1697-marie-angelique-coiteux",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ],
+    "children": [ "1717-jacques-hogue", "1719-m-josephe-hogue", "1721-francois-marie-hogue", "1721-elisabeth-hogue", "1723-m-marguerite-hogue", "1725-madeleine-hogue", "1727-joachim-hogue", "1729-m-anne-hogue", "1729-francois-hogue", "1731-m-madeleine-hogue", "1734-joseph-amable-hogue", "1734-jean-hogue", "1735-jean-baptiste-hogue", "1738-marie-barbe-hogue", "1738-francois-m-hogue", "1740-m-therese-c-hogue", "unknown-joseph-hogue" ]
+  },
+  {
+    "id": "1697-marie-angelique-coiteux",
+    "name": "Marie Angelique Coiteux",
+    "birth": "1697",
+    "death": "1779",
+    "spouse": "1687-francois-hogue",
+    "parents": [ "Jacques Coiteux", "Barbe Dumets" ]
+  },
+  {
+    "id": "1717-jacques-hogue",
+    "name": "Jacques Hogue",
+    "birth": "1717",
+    "death": "1748",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1719-m-josephe-hogue",
+    "name": "Marie Josephe Hogue",
+    "birth": "1719",
+    "death": "1737",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1721-francois-marie-hogue",
+    "name": "Francois Marie Hogue",
+    "birth": "1721",
+    "death": "1721",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1721-elisabeth-hogue",
+    "name": "Elisabeth Hogue",
+    "birth": "1721",
+    "death": "1765",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1723-m-marguerite-hogue",
+    "name": "Marie Marguerite Hogue",
+    "birth": "1723",
+    "death": "1727",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1725-madeleine-hogue",
+    "name": "Madeleine Hogue",
+    "birth": "1725",
+    "death": "1726",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1727-joachim-hogue",
+    "name": "Joachim Hogue",
+    "birth": "1727",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1729-m-anne-hogue",
+    "name": "Marie Anne Hogue",
+    "birth": "1729",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1729-francois-hogue",
+    "name": "Francois Hogue",
+    "birth": "1729",
+    "death": "1730",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1731-m-madeleine-hogue",
+    "name": "Marie Madeleine Hogue",
+    "birth": "1731",
+    "death": "1733",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1734-joseph-amable-hogue",
+    "name": "Joseph Amable Hogue",
+    "birth": "1734",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1734-jean-hogue",
+    "name": "Jean Hogue",
+    "birth": "1734",
+    "death": "1745",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1735-jean-baptiste-hogue",
+    "name": "Jean Baptiste Hogue",
+    "birth": "1735",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1738-marie-barbe-hogue",
+    "name": "Marie Barbe Hogue",
+    "birth": "1738",
+    "death": "1738",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1738-francois-m-hogue",
+    "name": "Francois Marie Hogue",
+    "birth": "1738",
+    "death": "1739",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1740-m-therese-c-hogue",
+    "name": "M-Therese Catherine Hogue",
+    "birth": "1740",
+    "death": "1777",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "unknown-joseph-hogue",
+    "name": "Joseph Hogue",
+    "birth": "?",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1687-francois-hogue", "1697-marie-angelique-coiteux" ]
+  },
+  {
+    "id": "1689-genevieve-hogue",
+    "name": "Genevieve Hogue",
+    "birth": "about 1689",
+    "death": "?",
+    "spouse": "",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1691-marguerite-hogue",
+    "name": "Marguerite Hogue",
+    "birth": "about 1691",
+    "death": "?",
+    "spouse": "1683-jacques-coiteux",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1683-jacques-coiteux",
+    "name": "Jacques Coiteux",
+    "birth": "1683",
+    "death": "1758",
+    "spouse": "1691-marguerite-hogue",
+    "parents": [ "Jacques Coiteux", "Barbe Demets" ]
+  },
+  {
+    "id": "1703-m-josephe-hogue",
+    "name": "M. Josephe Hogue",
+    "birth": "1703",
+    "death": "?",
+    "spouse": "1697-pierre-cadieux",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1697-pierre-cadieux",
+    "name": "Pierre Cadieux",
+    "birth": "1697",
+    "death": "1760",
+    "spouse": "1703-m-josephe-hogue",
+    "parents": [ "Pierre Cadieux", "Marie Marguerite Menard" ]
+  },
+  {
+    "id": "1705-angelique-hogue",
+    "name": "Angelique Hogue",
+    "birth": "about 1705",
+    "death": "about 1755",
+    "spouse": "1727-jean-archambault",
+    "parents": [ "1648-pierre-hogue", "1663-jeanne-theodore" ]
+  },
+  {
+    "id": "1727-jean-archambault",
+    "name": "Jean Archambault",
+    "birth": "1729",
+    "death": "1755",
+    "spouse": "1705-angelique-hogue",
+    "parents": [ "", "" ]
+  },
+  {
+    "id": "1705-m-marguerite-hogue",
+    "name": "M. Marguerite Hogue",
+    "birth": "1705",
+    "death": "1755",
+    "spouse": "1704-jean-archambault",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1704-jean-archambault",
+    "name": "Jean Archambault",
+    "birth": "1704",
+    "death": "1776",
+    "spouse": "1705-m-marguerite-hogue",
+    "parents": [ "Pierre Archambault", "Marie Catherine Lacombe" ]
+  },
+  {
+    "id": "1707-m-madeleine-hogue",
+    "name": "M. Madeleine Hogue",
+    "birth": "about 1707",
+    "death": "1777",
+    "spouse": "1704-joseph-lacombe",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1704-joseph-lacombe",
+    "name": "Joseph Lacombe",
+    "birth": "1704",
+    "death": "1785",
+    "spouse": "1707-m-madeleine-hogue",
+    "parents": [ "Jean Lacombe", "Marie Millet" ]
+  },
+  {
+    "id": "1709-jean-b-hogue",
+    "name": "Jean Baptiste Hogue",
+    "birth": "1709",
+    "death": "",
+    "spouse": "Marie Marguerite Brasseau (Brazeau)",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ],
+    "children": [ "1740-jean-marie-hogue" ]
+  },
+  {
+    "id": "1711-joseph-hogue",
+    "name": "Joseph Hogue",
+    "birth": "1711",
+    "death": "1733",
+    "spouse": "",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1713-francois-hogue",
+    "name": "Francois Hogue",
+    "birth": "about 1713",
+    "death": "1763",
+    "spouse": "Marie Marguerite Tetrault (Tetreau)",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1715-jean-hogue",
+    "name": "Jean Hogue",
+    "birth": "about 1715",
+    "death": "",
+    "spouse": "",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1717-m-genevieve-hogue",
+    "name": "M. Genevieve Hogue",
+    "birth": "1717",
+    "death": "1747",
+    "spouse": "Augustin Gaulin",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },{
+    "id": "1715-louis-hogue",
+    "name": "Louis Hogue",
+    "birth": "1720",
+    "death": "",
+    "spouse": "",
+    "parents": [ "1680-jean-b-hogue", "1686-barbe-coiteux" ]
+  },
+  {
+    "id": "1740-jean-marie-hogue",
+    "name": "Jean Marie Hogue",
+    "birth": "1740",
+    "death": "",
+    "spouse": "1740-jean-marie-hogue Marie Amable Brodeur",
+    "parents": [ "1709-jean-b-hogue", "Marie Marguerite Brasseau" ],
+    "children": [ "1767-jean-marie-hogue" ]
+  },
+  {
+    "id": "1767-jean-marie-hogue",
+    "name": "Jean Marie Hogue",
+    "birth": "1767",
+    "death": "1827",
+    "spouse": "Marie Anne Casavant dit Ladibauche",
+    "parents": [ "1740-jean-marie-hogue", "Marie Amable Brodeur" ],
+    "children": [ "1815-michel-hogue" ]
+  },
+  {
+    "id": "1815-michel-hogue",
+    "name": "Michel Hogue",
+    "birth": "about 1815",
+    "death": "1847",
+    "spouse": "Marguerite Latour Ballard",
+    "parents": [ "1767-jean-marie-hogue", "Marie Anne Casavant" ],
+    "children": [ "1846-francois-hogue" ]
+  },
+  {
+    "id": "1846-francois-hogue",
+    "name": "Francois Hogue",
+    "birth": "1846",
+    "death": "1904",
+    "spouse": "Marie Helenburgh",
+    "parents": [ "1815-michel-hogue", "Marguerite Latour Ballard" ],
+    "children": [ "1880-albert-j-n-hogue" ]
+  },
+  {
+    "id": "1880-albert-j-n-hogue",
+    "name": "Albert Joseph Hogue",
+    "birth": "1880",
+    "death": "1974",
+    "spouse": "1880-juvenile-champagne",
+    "parents": [ "1846-francois-hogue", "Marie Lemere" ],
+    "children": [ "1923-damase-a-hogue" ],
+    "photo": "/path/to/image.jpg"
+  },
+  {
+    "id": "1880-juvenile-champagne",
+    "name": "Juvenile Champagne",
+    "birth": "1880",
+    "death": "1956",
+    "spouse": "1880-albert-j-n-hogue",
+    "parents": [ "Francois Champagne", "Adele Champagne Lambert" ],
+    "photo": "/path/to/image.jpg"
+  },
+  {
+    "id": "1923-damase-a-hogue",
+    "name": "Damase A. Hogue",
+    "birth": "1923",
+    "death": "1990",
+    "spouse": "1927-lucille-marcotte",
+    "parents": [ "1880-albert-j-n-hogue", "1880-juvenile-champagne" ],
+    "children": [ "1947-marcel-g-hogue" ],
+    "photo": "/path/to/image.jpg"
+  },
+  {
+    "id": "1927-lucille-marcotte",
+    "name": "Lucille Marcotte",
+    "birth": "1927",
+    "death": "2011",
+    "spouse": "1923-damase-a-hogue",
+    "parents": [ "Adjutor Marcotte", "Marie Louise Laquerre" ],
+    "photo": "/path/to/image.jpg"
+  },
+  {
+    "id": "1947-marcel-g-hogue",
+    "name": "Marcel G. Hogue",
+    "birth": "1947",
+    "death": "",
+    "spouse": "1948-denise-laferriere",
+    "parents": [ "1923-damase-a-hogue", "1927-lucille-marcotte" ],
+    "photo": "/path/to/image.jpg"
+  },
+  {
+    "id": "1948-denise-laferriere",
+    "name": "Denise Laferriere",
+    "birth": "1948",
+    "death": "",
+    "spouse": "1947-marcel-g-hogue",
+    "parents": [ "Lionel Laferriere", "Mirza Beaudoin" ],
+    "photo": "/path/to/image.jpg"
+  }
+]
