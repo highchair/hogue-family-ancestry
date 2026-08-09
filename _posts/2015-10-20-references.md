@@ -44,7 +44,7 @@ A one page article with similar information at the one indicated above, but neve
 Common terms and their English interpretation, including “Types of Notarial Acts.”
 
 
-## <span lang="fr">Les Filles Du Ro</span>
+## <span lang="fr">Les Filles Du Roi</span>
 
 **The Daughters of the King** by Helen Tuttle 
 

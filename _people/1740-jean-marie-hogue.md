@@ -5,8 +5,8 @@ name: 'Jean Marie Hogue'
 full-name:
 alt-names: []
 alt-spelling: []
-major_generation: 5.4
-generation: 5
+major_generation: 5
+generation: 5.4
 revised-date: 2013-12-23
 
 born:

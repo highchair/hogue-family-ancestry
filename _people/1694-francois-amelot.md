@@ -6,7 +6,7 @@ full-name:
 alt-names: []
 alt-spelling: []
 major_generation: 3
-generation: 3.10
+generation: '3.10'
 revised-date: 2013-06-27
 
 father: 'Jacques Amelot Sanpeur'
@@ -45,5 +45,5 @@ It would appear that Jeanne had “an affair” with Jacques, with the result of
 
 ## Notes
 
-+ **Marie Catherine Lorrain** – Also, in some of the source material, Marie Catherine Lorrain (Laurin) above is shown as wife to Francois, but (Generation 11.32) Marcel believes that may be incorrect. If it were, (Gen #3.7) Francois would be marrying Marie Angelique Coiteux (which would make her his 2nd spouse) while Marie Catherine is still alive (she dies in 1748) — an unlikely event. For this reason, I believe that Marie Catherine belongs with this Francois (Gen #3.10) above.
++ **Marie Catherine Lorrain** – Also, in some of the source material, Marie Catherine Lorrain (Laurin) above is shown as wife to [3.7 Francois]({% link _people/1687-francois-hogue.md %}), but (Generation 11.32) Marcel believes that may be incorrect. If it were, 3.7 Francois would be marrying Marie Angelique Coiteux (which would make her his 2nd spouse) while Marie Catherine is still alive (she dies in 1748) — an unlikely event. For this reason, I believe that Marie Catherine belongs with this 3.10 Francois above.
 + Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See (Generation 11.32) Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._

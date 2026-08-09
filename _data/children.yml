@@ -32,7 +32,7 @@
   union-date: 1676-11-10
   union-location: 'Notre Dame, Montreal, Quebec, Canada'
   children:
-  - child: 'Marie Anne Therese Hogue (1678 – ?)'
+  - child: '3.3 Marie Anne Therese Hogue (1678 – ?)'
   - child: 1680-jean-b-hogue
   - child: 1682-m-therese-hogue
   - child: 1684-jeanne-hogue
@@ -59,10 +59,10 @@
   - child: 1713-francois-hogue
   - child: 1715-jean-hogue
   - child: 1717-m-genevieve-hogue
-  - child: 1715-louis-hogue
-  - child: 'Madeleine (1720 – 1777, age 57y)'
-  - child: 'Marie Elisabeth Hogue (1722 – 1765, age 43y)'
-  - child: 'Pierre Hogue (Aug 1725, dies at 9 days old)'
+  - child: 1720-louis-hogue
+  - child: '4.85 Madeleine (1720 – 1777, age 57y)'
+  - child: '4.9 Marie Elisabeth Hogue (1722 – 1765, age 43y)'
+  - child: '4.10 Pierre Hogue (Aug 1725, dies at 9 days old)'
   - child: 'Baby Boy Hogue (Sep 1727, dies at 1 day old)'
 
 - partnership: '1684-jeanne-hogue 1684-pierre-chartrand'

@@ -1,6 +1,6 @@
 ---
 layout: person
-slug: 1715-louis-hogue
+slug: 1720-louis-hogue
 name: 'Louis Hogue'
 full-name:
 alt-names: []
