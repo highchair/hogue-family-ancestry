@@ -66,7 +66,7 @@ layout: default
 {%- endif -%}
 
 <header class="person__header">
-  <h1 class="person__title" data-name="{{ person_name }}">{{ person_name }}</h1>
+  <h1 class="person__title" data-name="{{ person_name }}">{{ page.generation }} {{ person_name }}</h1>
   {% if page.alt-names.size > 0 %}<p>Also known as: {% for alt in page.alt-names %}{% unless forloop.first %}, {% endunless %}{{ alt }}{% endfor %}</p>{% endif %}
   {% if page.alt-spelling.size > 0 %}<p>Alternate spelling(s): {% for spell in page.alt-spelling %}{% unless forloop.first %}, {% endunless %}{{ spell }}{% endfor %}</p>{% endif %}
 </header>
@@ -107,13 +107,13 @@ layout: default
 {%- if siblings.size > 0 -%}
 <details class="rhythm">
   <summary><h4 style="display: inline;">Siblings{% if siblings.size > 1 %} and Step-siblings{% endif %}</h4></summary>
-  <ol class="person__rels person__siblings">
+  <ul class="person__rels person__siblings">
   {%- for sib in siblings -%}
     {%- for child in sib.children -%}
-      <li>{% if child.child == page.slug %}<s aria-current="page">{% endif %}{% include snippets/person-link.html string=child.child %}{% if child.child == page.slug %}</s>{% endif %}</li>
+      <li>{{ child.generation }} {% if child.child == page.slug %}<s aria-current="page">{% endif %}{% include snippets/person-link.html string=child.child %}{% if child.child == page.slug %}</s>{% endif %}</li>
     {%- endfor -%}
   {%- endfor -%}
-  </ol>
+  </ul>
 </details>
 {%- endif -%}
 
@@ -150,11 +150,11 @@ layout: default
       {%- if union[0] -%}
         {%- for child in union[0].children -%}
           {%- if forloop.first -%}
-            <h5>Children</h5><ol>
+            <h5>Children</h5><ul class="no-decoration">
           {%- endif -%}
           <li>{% include snippets/person-link.html string=child.child %}</li>
         {%- endfor -%}
-            </ol>
+            </ul>
       {%- endif -%}
     </dd>
   {%- endfor -%}
@@ -231,3 +231,10 @@ layout: default
 {% if page.revised-date %}
   <p><i><b>Last revised/updated</b> {{ page.revised-date | date: "%e %B %Y" }}</i></p>
 {% endif %}
+
+<nav>
+  <p>
+    {% if page.previous %}<a href="{{ page.previous.url }}">Previous: {{ page.previous.name }}</a><br />{% endif %}
+    {% if page.next %}<a href="{{ page.next.url }}">Next: {{ page.next.name }}</a>{% endif %}
+  </p>
+</nav>

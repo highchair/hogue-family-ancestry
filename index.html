@@ -26,7 +26,7 @@ layout: default
         {% assign generation_check = person.major_generation %}
       {% endif %}
     {% endif %}
-    <li><a href="{{ person.url }}">{{ person.name }}</a> {% if person.born.date %}({{ person.born.date | date: "%Y" }}{% if person.death.date %}–{{ person.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
+    <li>{{ person.generation }} <a href="{{ person.url }}">{{ person.name }}</a> {% if person.born.date %}({{ person.born.date | date: "%Y" }}{% if person.death.date %}–{{ person.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
   {% endif %}
 {% endfor %}
 </ul>
