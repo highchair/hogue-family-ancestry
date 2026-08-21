@@ -40,11 +40,11 @@ partners:
 
 ## About
 
-Angelique is the youngest daughter of Pierre and Jeanne Theodore. They have her when he is 57 and she is 42 years old. All tolled, Jeanne had ten children over the course of 27 years.
+Angelique is the youngest daughter of Pierre and Jeanne Theodore. They have her when he is 57 and she is 42 years old. All told, Jeanne had 10 children over the course of 27 years.
 
 
 ## Notes
 
-**Marriage** — The above marriage information for “Angelique” and “Jean” is from the “DGdQ” source, page 510. A “PRDH” marriage search for the above couple resulted in “No Record Found”. A “baptism” and “burial” search for them also resulted with no applicable entries. The only marriage document found in the “PRDH” source for a “Jean Archambault” was file #12878 showing his marriage to (Gen. #4.1) Marie Marguerite. Since “Angelique” appears in only the “DGdQ” source, it is unclear if this child is offspring to Pierre and Jeanne, and whether or not she marries this “Jean Archambault”. A “PRDH” search for Angelique in the “Baptism”, “Marriage”, and “Burial” database resulted in only 3 entries. None were applicable to this Angelique.
+**Marriage** — The above marriage information for “Angelique” and “Jean” is from the “DGdQ” source, page 510. A “PRDH” marriage search for the above couple resulted in “No Record Found.” A “baptism” and “burial” search for them also resulted with no applicable entries. The only marriage document found in the “PRDH” source for a “Jean Archambault” was file #12878 showing his marriage to (Gen. #4.1) Marie Marguerite. Since “Angelique” appears in only the “DGdQ” source, it is unclear if this child is offspring to Pierre and Jeanne and whether or not she marries this “Jean Archambault.” A “PRDH” search for Angelique in the “Baptism,” “Marriage,” and “Burial” database resulted in only three entries. None were applicable to this Angelique.
 + **Jean Archambault** – The dates shown for death and burial are from the “AFGS” book “TER054” page 1191.
 + Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See (Generation 11.32) Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._
