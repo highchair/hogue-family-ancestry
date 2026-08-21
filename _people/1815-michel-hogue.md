@@ -39,9 +39,9 @@ partners:
 
 ## About
 
-Michel was born around 1815, we are not entirely sure if this is correct. If it is, he was married by age 20 to a 26 year old Marguerite. They have four children for whom we found records, but none of their birth dates are known.
+Michel was born around 1815, and we are not entirely sure if this is correct. If it is, he was married by age 20 to a 26-year-old Marguerite. They have four children for whom we found records, but none of their birth dates are known.
 
 
 ## Notes
-+ **Marriage location** — “St. Pierre” is shown in Francois/Therese email dated 6 March 2011.
-+ **Marguerite** — Ilene Trainor email dated 8 Mar 2011 indicates that Marguerite had a previous marriage to “Basile Doucet” (son of Michel & Marg. Berard on 23 Nov 1830. It can also be found in the AFGS book #RCU L3-1 009, page 115, titled “Marriages of St. Pierre de Sorel 1675 - 1865”.  Marguerite’s birth/baptismal information is taken from the “AFGS” book # “BER 022”. “Ile Dupas” (part of Berthier County) is an island in the St. Laurence River a short distance across from the city of Sorel (part of Richelieu County).
++ **Marriage location** — “St. Pierre” is shown in Francois/Therese email dated 6 March, 2011.
++ **Marguerite** — Ilene Trainor email dated 8 March, 2011 indicates that Marguerite had a previous marriage to “Basile Doucet” (son of Michel and Marg. Berard on 23 November, 1830. It can also be found in the AFGS book #RCU L3-1 009, page 115, titled “Marriages of St. Pierre de Sorel 1675 - 1865.” Marguerite’s birth/baptismal information is taken from the “AFGS” book # “BER 022.” “Ile Dupas” (part of Berthier County) is an island in the St. Lawrence River a short distance from the city of Sorel (part of Richelieu County).
