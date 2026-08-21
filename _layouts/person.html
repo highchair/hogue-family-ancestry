@@ -139,16 +139,16 @@ layout: default
       <h4>{% include snippets/person-link.html string=partner.spouse %}</h4>
       {%- if partner.spouse-parents or partner.spouse-born or union[0].union-date or partner.spouse-death -%}
       <dl class="person__metadata">
-        {%- if partner.spouse-parents -%}<dt>Parents:</dt><dd>{{ partner.spouse-parents }}</dd>{%- endif -%}
-        {%- if partner.spouse-born -%}<dt>Born:</dt><dd>{{ partner.spouse-born }}{% if partner.spouse-born-location %}, {{ partner.spouse-born-location }}{% endif %}</dd>{%- endif -%}
+        {%- if partner.spouse-parents -%}<dt>Parents</dt><dd>{{ partner.spouse-parents }}</dd>{%- endif -%}
+        {%- if partner.spouse-born -%}<dt>Born</dt><dd>{{ partner.spouse-born }}{% if partner.spouse-born-location %}, {{ partner.spouse-born-location }}{% endif %}</dd>{%- endif -%}
         {%- if union[0].union-date -%}
-          <dt>Marriage:</dt><dd>{{ union[0].union-date | date: "%e %B %Y"  }}{% if union[0].union-location %}, {{ union[0].union-location }}{% endif %}</dd>
+          <dt>Marriage</dt><dd>{{ union[0].union-date | date: "%e %B %Y"  }}{% if union[0].union-location %}, {{ union[0].union-location }}{% endif %}</dd>
         {%- else -%}
           {%- if partner.union-date -%}
-            <dt>Marriage:</dt><dd>{{ partner.union-date | date: "%e %B %Y"  }}{% if partner.union-location %}, {{ partner.union-location }}{% endif %}</dd>
+            <dt>Marriage</dt><dd>{{ partner.union-date | date: "%e %B %Y"  }}{% if partner.union-location %}, {{ partner.union-location }}{% endif %}</dd>
           {%- endif -%}
         {%- endif -%}
-        {%- if partner.spouse-death -%}<dt>Death:</dt><dd>{{ partner.spouse-death }}</dd>{%- endif -%}
+        {%- if partner.spouse-death -%}<dt>Death</dt><dd>{{ partner.spouse-death }}</dd>{%- endif -%}
       </dl>
       {%- endif -%}
       {%- comment -%}
