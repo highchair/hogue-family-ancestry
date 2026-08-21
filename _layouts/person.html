@@ -66,23 +66,30 @@ layout: default
 {%- endif -%}
 
 <header class="person__header">
-  <h1 class="person__title" data-name="{{ person_name }}">{{ page.generation }} {{ person_name }}</h1>
+  <h1 class="person__title" data-name="{{ person_name }}">{{ person_name }}</h1>
   {% if page.alt-names.size > 0 %}<p>Also known as: {% for alt in page.alt-names %}{% unless forloop.first %}, {% endunless %}{{ alt }}{% endfor %}</p>{% endif %}
   {% if page.alt-spelling.size > 0 %}<p>Alternate spelling(s): {% for spell in page.alt-spelling %}{% unless forloop.first %}, {% endunless %}{{ spell }}{% endfor %}</p>{% endif %}
 </header>
 <dl class="person__metadata">
-{% if page.generation %}
+{%- if page.generation -%}
   <dt>Generation</dt>
   <dd>Hogue family generation number {{ page.generation }}</dd>
-{% endif %}
-{% if page.born.date or page.baptized.date %}
-  <dt>{% if page.born.date %}Born{% endif %}{% if page.born.date and page.baptized.date %} / {% endif %}{% if page.baptized.date %}Baptized{% endif %}</dt>
-  <dd data-birth-date="{{ person_born }}" data-birth-place="{{ person_born_location }}">{% if page.born.date %}{{ page.born.date | date: "%e %B %Y" }}{% endif %}{% if page.born.location %}, {{ page.born.location }}{% endif %}{% if page.born.date and page.baptized.date %} / {% endif %}{{ page.baptized.date | date: "%e %B %Y" }}{% if page.baptized.location %}, {{ page.baptized.location }}{% endif %}</dd>
-{% endif %}
-{% if page.death.date or page.buried.date %}
+{%- endif -%}
+{%- if page.born.date or page.baptized.date -%}
+  <dt>{% if page.born.date %}Born{% endif %}{% if page.born.date %}{% if page.baptized.date or page.baptized.location %} / {% endif %}{% endif %}{% if page.baptized.date or page.baptized.location %}Baptized{% endif %}</dt>
+  <dd data-birth-date="{{ person_born }}" data-birth-place="{{ person_born_location }}">{% if page.born.date %}{{ page.born.date | date: "%e %B %Y" }}{% endif %}{% if page.born.location %}, {{ page.born.location }}{% endif %}{% if page.born.date %}{% if page.baptized.date or page.baptized.location %} / {% endif %}{% endif %}{{ page.baptized.date | date: "%e %B %Y" }}{% if page.baptized.date and page.baptized.location %}, {% endif %}{% if page.baptized.location %}{{ page.baptized.location }}{% endif %}</dd>
+{%- endif -%}
+{%- if page.death.date or page.buried.date -%}
+  {%- if page.death.date == 'living' -%}
+    {%- if page.born.date -%}
+      <dt>Living</dt>
+      <dd>{% include snippets/person-age.html string=page %} years old</dd>
+    {%- endif -%}
+  {%- else -%}
   <dt>{% if page.death.date %}Died{% endif %}{% if page.death.date and page.buried.date %} / {% endif %}{% if page.buried.date %}Buried{% endif %}</dt>
   <dd data-death-date="{{ person_died }}" data-death-place="{{ person_died_location }}">{% if page.age-at-death %}{{ page.age-at-death }} — {% endif %}{{ page.death.date | date: "%e %B %Y" }}{% if page.death.location %}, {{ page.death.location }}{% endif %}{% if page.buried.date %} / {{ page.buried.date | date: "%e %B %Y" }}{% if page.buried.location %}, {{ page.buried.location }}{% endif %}{% endif %}</dd>
-{% endif %}
+  {%- endif -%}
+{%- endif -%}
 </dl>
 
 <h2>Relationships</h2>
