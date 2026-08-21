@@ -37,6 +37,6 @@ age-at-death: '22y 1m'
 
 ## Notes
 
-+ **Birth date** — Ancestry.com lists Pierre’s birth date as 28 February 1673 (source unknown)
++ **Birth date** — Ancestry.com lists Pierre’s birth date as 28 February, 1673 (source unknown).
 + Pierre is a drowning victim (<span lang="fr">noyé</span>) according to “AFGS” “PRDH” database #11840.
 + Typically, the location of Canada is shown for familiarity purposes. At this time in Canadian history, it would have been known as “Nouvelle France” (New France). See (Generation 11.32) Marcel’s “Introduction” and “Story of Pierre” for additional information. _New France became the British Province of Quebec in 1763 after France ceded it in the Treaty of Paris at the end of the Seven Years’ War._
