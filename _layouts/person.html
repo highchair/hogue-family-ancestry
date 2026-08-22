@@ -148,7 +148,10 @@ layout: default
             <dt>Marriage</dt><dd>{{ partner.union-date | date: "%e %B %Y"  }}{% if partner.union-location %}, {{ partner.union-location }}{% endif %}</dd>
           {%- endif -%}
         {%- endif -%}
-        {%- if partner.spouse-death -%}<dt>Death</dt><dd>{{ partner.spouse-death }}</dd>{%- endif -%}
+        {%- if partner.spouse-death -%}
+          <dt>{% if partner.spouse-death %}Died{% endif %}{% if partner.spouse-death and partner.spouse-buried %} / {% endif %}{% if partner.spouse-buried %}Buried{% endif %}</dt>
+          <dd>{{ partner.spouse-death | date: "%e %B %Y" }}{% if partner.spouse-buried %}, {{ partner.spouse-buried }}{% endif %}</dd>
+        {%- endif -%}
       </dl>
       {%- endif -%}
       {%- comment -%}
