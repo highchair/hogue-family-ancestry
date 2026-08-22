@@ -11,3 +11,10 @@ Just some interesting notes to include in a narrative of the early years. Dad ma
 1709 Jean Baptiste Hogue begins the “Woonsocket” line.
 
 His brother Francois (Gen. #4.5) begins the "Manitoba" line.
+
+Updates needed:
+- Walter’s parents names
+- Maiden name of Kim’s mother
+- Simone’s birth date and her parent’s names
+– Collette burial date
+– Mike’s parents names
