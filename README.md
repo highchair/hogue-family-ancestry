@@ -3,6 +3,7 @@ Hogue Family Tree
 
 A Genealogy Jekyll Theme with custom post type of **People**.
 
+Available online at [https://hogueancestry.highchairdesign.com/](hogueancestry.highchairdesign.com).
 
 ## Credits
 
