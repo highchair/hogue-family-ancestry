@@ -38,7 +38,7 @@ partners:
 
 ## About
 
-Marie Josephe is the second to last daughter of Pierre and Jeanne Theodore, born nine years after her step-sibling [Francois Amelot]({% link _people/1694-francois-amelot.md %}) and 12 years after her nearest sister, [Marguerite]({% link _people/1691-marguerite-hogue.md %}). She is 19 years of age when she married Pierre Cadieux. Pierre’s residence at the time is shown as “Dutremblay, paroisse de Boucherville”, also spelled “Dutremble” in some source materials.
+Marie Josephe is the second-to-last daughter of Pierre and Jeanne Theodore, born nine years after her step-sibling [Francois Amelot]({% link _people/1694-francois-amelot.md %}) and 12 years after her nearest sister, [Marguerite]({% link _people/1691-marguerite-hogue.md %}). She is 19 years of age when she married Pierre Cadieux. Pierre’s residence at the time is shown as “Dutremblay, paroisse de Boucherville,” also spelled “Dutremble” in some source materials.
 
 
 ## Notes

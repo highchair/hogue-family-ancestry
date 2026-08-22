@@ -49,7 +49,7 @@ mother: 'Barbe Coiteux (Coetteux)'
 
 ## About
 
-Not much is known other than Joseph died young at 22 years of age.
+Not much is known other than Joseph died young, at 22 years of age.
 
 
 ## Notes

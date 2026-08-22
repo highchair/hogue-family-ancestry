@@ -47,7 +47,7 @@ partners:
 
 ## About
 
-M. Madeleine marries a Lacombe man and her sister,[M. Marguerite]({% link _people/1705-m-marguerite-hogue.md %}), marries the son of a Lacombe woman. We should probably not be surprised, as villages were small and inhabitants were few or from large families like this one (8 siblings survive into adulthood and one dies at the young age of 22).
+M. Madeleine marries a Lacombe man and her sister, [M. Marguerite]({% link _people/1705-m-marguerite-hogue.md %}), marries the son of a Lacombe woman. We should probably not be surprised, as villages were small and inhabitants were few or from large families like this one (eight siblings survive into adulthood and one dies at the young age of 22).
 
 M. Madeleine is 28 years old and Joseph is 30 when they marry — relatively late in life for both for the time. It is unknown if they were previously married. She is 70 and he is 80 at their deaths — an unusually long life as well.
 
