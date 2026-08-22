@@ -1,7 +1,7 @@
 ---
 layout: person
 slug: 1947-marcel-g-hogue
-name: 'Marcel G. Hogue'
+name: 'Marcel Hogue'
 full-name: 'Marcel Gerard Hogue'
 alt-names: []
 alt-spelling: []
@@ -17,7 +17,8 @@ baptized:
   location:
 
 death:
-  date:
+  date: 'living'
+  location:
 buried:
   date:
   location:

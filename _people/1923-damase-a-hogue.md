@@ -18,6 +18,7 @@ baptized:
 
 death:
   date: 1990-11-23
+  location:
 buried:
   date: 1990-11-27
   location:
@@ -28,7 +29,7 @@ mother: 'Juvenile “Juvenie” Champagne'
 
 partners:
   - spouse: 'Lucille Marcotte'
-    union: '1923-damase-a-hogue Lucille Marcotte'
+    union: '1923-damase-a-hogue 1927-lucille-marcotte'
     spouse-parents: 'daughter of Adjutor Marcotte and Marie Louise Laquerre'
     spouse-born: 1927-10-09
     spouse-born-location: 'Woonsocket, Rhode Island'
