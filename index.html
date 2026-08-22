@@ -7,26 +7,24 @@ layout: default
 
 <h1>{{ site.title }}</h1>
 
-<h2>Posts</h2>
-<ul>
+<h2>Articles</h2>
+<ul class="no-decoration">
 {% for post in posts %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% if forloop.last %}<li><a href="/family-tree/">Family Tree visualization</a></li>{% endif %}
+  {% comment %}{% if forloop.last %}<li><a href="/family-tree/">Family Tree visualization</a></li>{% endif %}{% endcomment %}
 {% endfor %}
 </ul>
 
 <h2>People</h2>
-<ul>
+<ul class="no-decoration">
 {% assign generation_check = 0 %}
 {% for person in people %}
-  {% if person.layout != 'stub' %}
-    {% if person.major_generation %}
-      {% if person.major_generation != generation_check %}
-        <li><h3>Generation {{ person.major_generation }}</h3></li>
-        {% assign generation_check = person.major_generation %}
-      {% endif %}
+  {% if person.major_generation %}
+    {% if person.major_generation != generation_check %}
+      <li><h3>Generation {{ person.major_generation }}</h3></li>
+      {% assign generation_check = person.major_generation %}
     {% endif %}
-    <li>{{ person.generation }} <a href="{{ person.url }}">{{ person.name }}</a> {% if person.born.date %}({{ person.born.date | date: "%Y" }}{% if person.death.date %}–{{ person.death.date | date: "%Y" }}{% endif %}{% endif %})</li>
   {% endif %}
+  <li>{% include snippets/person-link.html string=person.slug %}</li>
 {% endfor %}
 </ul>
